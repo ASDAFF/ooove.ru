@@ -1,0 +1,14 @@
+.bx_profile{
+	font-size: 80%;
+}
+.bx_profile input[type="text"], .bx_profile input[type="password"]{
+	width:100%;
+	display: block;
+	padding: 6px;
+	outline: none;
+	border:1px solid #ececec;
+	font:12px 'HelveticaRoman';
+	color:#818183;
+	vertical-align: middle;
+	max-width:400px
+}

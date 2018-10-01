@@ -1,0 +1,39 @@
+/* список марок */
+
+.catalog-cars-list{margin-bottom:25px;}
+
+.catalog-cars-list .item{
+width: 20%;
+height: 150px;
+float: left;
+text-align: center;
+border:1px solid rgba(0,0,0,0);
+}
+.catalog-cars-list .item:hover{border:1px solid #b93232;}
+
+.catalog-cars-list .item .img-item {
+width: 20%;
+height: 105px;
+display: table-cell;
+vertical-align: middle;
+}
+.catalog-cars-list .item .name-item {
+font-size: 18px;
+color: #262628;
+font-family: Tahoma, Arial, sans-serif;
+}
+
+.catalog-cars-list .item-text{
+width: 289px;
+display:inline-block;
+text-align: center;
+vertical-align:middle;
+padding:10px 0;
+}
+
+.catalog-cars-list .item-text .name-item {
+font-size: 15px;
+color: #818183;
+font-family: Tahoma, Arial, sans-serif;
+}
+.catalog-cars-list .item-text:hover .name-item{color:#b93232;}

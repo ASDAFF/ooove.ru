@@ -1,0 +1,319 @@
+.wrp{
+width:100%;
+max-width:1200px;
+margin:0 auto;
+padding:0 15px;
+position:relative;
+}
+
+.all-link{
+display:inline-block;
+font-size:14px;
+color:#b93232;
+text-decoration:underline;
+text-transform:uppercase;
+position:absolute;
+right:15px;
+top:4px;
+}
+.all-link:hover{text-decoration:none;}
+
+.top-banner{
+background: #B93232;
+padding: 10px 30px;
+color: #FFF;
+font-size: 15px;
+}
+
+/* TOP PANEL */
+.top-panel{background-color:#262628; height:40px;}
+.top-panel-inner{height:100%;}
+
+.top-menu{float:left; height:100%;}
+.top-menu ul{height:100%; margin-left:-20px;}
+.top-menu ul li{
+display:inline-block;
+height:100%;
+}
+.top-menu ul li a{
+color:#fff;
+font-size:12px;
+text-transform:uppercase;
+display:block;
+height:100%;
+line-height:40px;
+padding:0 20px;
+}
+.top-menu ul li a:hover{background:#b93232;}
+
+.login-box{float:right; height:100%;}
+.login-box a.login, .login-box .basket{
+color:#fff;
+font-size:12px;
+text-transform:uppercase;
+display:inline-block;
+background:url(/images/icon.png) no-repeat 0 0;
+margin-left:35px;
+height:100%;
+line-height:40px;
+}
+.login-box a.login{background-position:0px 9px; padding-left:25px;}
+.login-box .basket{background:url(/images/icon.png) no-repeat 0px -24px; padding-left:33px;}
+.login-box .basket a{color:#fff; font-size:12px;}
+
+/* HEADER */
+.header{
+background-color:#202020;
+height:121px;
+}
+.header .logo{float:left; margin-right: 40px;}
+
+.middle{
+clear:both;
+background:#262628;
+height:40px;
+}
+.middle-inner .main-menu{display:inline-block;}
+.middle-inner .main-menu ul, .top-menu-mobile ul{margin-left:-20px;}
+.main-menu li{
+float:left;
+border-right:1px solid #3a3a3d;
+}
+.main-menu li:last-child{border-right:none;}
+.main-menu li a, .top-menu-mobile li a{
+color:#fff;
+font-size:12px;
+text-transform:uppercase;
+display:inline-block;
+vertical-align: middle;
+padding:0 20px;
+text-align:center;
+height: 40px;
+line-height: 40px;
+}
+.main-menu li a:hover, .top-menu-mobile li a:hover{background:#b93232;}
+
+.top-menu-mobile{display:none;}
+
+.slogan-box{float:right; width:458px; height:121px;}
+.slogan-box img{width:100%;}
+
+.phone-box{float:right; padding-top:40px;}
+.phone-box .phone{
+background:url(/images/icon.png) no-repeat 0 -72px;
+color:#fff;
+padding-left:30px;
+margin-left: 30px;
+float: left;
+}
+.phone-box .phone span{
+display:block;
+font:22px 'FregatBold';
+color:#fff;
+}
+
+.middle-inner .search{
+display:inline-block; 
+position: absolute;
+top: 5px;
+right: 15px;
+}
+.middle-inner .search input[type="text"]{
+width:191px;
+background:none;
+border:1px solid #3b3b3e;
+height:28px;
+padding-left:5px;
+padding-right:28px;
+color:#c0c0c0;
+font-size:12px;
+}
+.middle-inner .search input[type="image"]{
+position:absolute;
+width:16px;
+height:16px;
+top:50%;
+margin-top:-8px;
+right:5px;
+}
+
+/* TEXT */
+
+.text-page{
+padding:0px 150px 195px;
+margin:30px auto 0;
+}
+
+.text-page h1{
+font:30px 'MyriadPro-BoldIt'; 
+margin-bottom:40px; 
+letter-spacing: normal; 
+text-transform: none;
+text-align:center;
+}
+.text-page h2{text-align:center;}
+ 
+.text-page ul{
+list-style:disc;
+list-style-position:inside;
+margin-bottom:20px;
+}
+.text-page ul li{
+font:14px Tahoma, Arial, sans-serif;
+color:#262628;
+}
+.text-page p{color:#262628;}
+
+/* FOOTER */
+.footer{
+background:#202020;
+width: 100%;
+/*height: 165px;
+position: absolute;
+bottom: 0;*/
+}
+.footer-inner{padding:50px 0; position:relative;}
+.footer-inner .copyright{float:left;}
+.footer-inner .copyright p{
+color:#e1e1e1;
+font-size:13px;
+}
+.footer-inner .phone-box{padding-top:0;}
+.footer-inner .phone-box .phone{font-size:12px;}
+.footer-inner .phone-box .phone span{
+display:block;
+font:18px 'FregatBold';
+color:#fff;
+}
+.footer-inner .text-tag{
+color:#202020;
+width:0px;
+height:0px;
+overflow: hidden;
+}
+
+/* AUTH */
+body{background-color:#f4f5f7;}
+.auth-wind{
+max-width:350px;
+background:#fff;
+padding:60px 30px 20px;
+margin:100px auto;
+}
+.auth-wind input[type="text"], .auth-wind input[type="password"], .auth-wind textarea{
+border:1px solid #ececec;
+font:12px Tahoma, Arial, sans-serif;
+color:#262628;
+width:100%;
+padding:5px 30px 5px 5px;
+margin-bottom:35px;
+}
+.auth-wind input[type="text"], .auth-wind input[type="password"]{height:30px;}
+.auth-wind textarea{height:100px; resize:none;}
+
+.login-window input[type="text"]{background:url(/images/login-ico.png) no-repeat 98% 50%;}
+.login-window input[type="password"]{background:url(/images/pass-ico.png) no-repeat 98% 50%;}
+
+.auth-wind .btn{
+display:inline-block;
+width:42%;
+text-transform:uppercase;
+font:12px Tahoma, Arial, sans-serif;
+height:30px;
+line-height:27px;
+text-align:center;
+-webkit-border-radius:3px 3px 3px 3px;
+-moz-border-radius:3px 3px 3px 3px;
+border-radius:3px 3px 3px 3px;
+cursor:pointer;
+}
+.auth-wind .btn.red{
+background:#b93232;
+border:1px solid #b93232;
+color:#fff;
+}
+.auth-wind .btn.gray{
+background:#fff;
+border:1px solid #c0c0c0;
+color:#818183;
+}
+.auth-wind .btn.red{margin-right:7%;}
+.auth-wind .btn.gray{margin-left:7%;}
+.login-window .forgot-link{
+color:#b93232;
+font:14px Tahoma, Arial, sans-serif;
+display:block;
+height:30px;
+line-height:30px;
+width:100%;
+text-align:center;
+text-transform:uppercase;
+margin-top:30px;
+}
+
+/* TESTDRIVE */
+
+.all-video{margin:0 -120px;}
+
+.all-video .testdrive-video-item{
+float:left;
+width: 30.8%;
+margin-right:3.5%;
+margin-bottom:30px;
+
+position: relative;
+padding-bottom: 245px;
+padding-top: 30px; 
+height: 0; 
+overflow: hidden;
+}
+.all-video  .testdrive-video-item iframe,
+.all-video  .testdrive-video-item object,
+.all-video  .testdrive-video-item embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.all-video .testdrive-video-item:last-child, .all-video .testdrive-video-item:nth-child(3n){margin-right:0;}
+
+.pagenav{
+clear: both;
+text-align: center;
+margin-top:20px;
+}
+
+h2{
+font:24px 'Arial'; 
+margin-bottom:20px;
+}
+
+.con h3 a
+{
+
+font-size: 20px;
+padding: 5px 10px 5px 10px;
+text-decoration: underline;
+}
+
+.con h2 a
+{
+margin-bottom:40px;
+}
+
+.con h2
+{
+margin-bottom:40px;
+}
+
+.con {
+margin: 30px 20px 30px 0;
+}
+
+.maincontacts{
+width: 60%;
+margin-left:30%;
+}
+

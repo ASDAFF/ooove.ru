@@ -1,0 +1,1 @@
+<?php include($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/echogroup.delovielinii/delivery_handler.php');

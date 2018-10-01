@@ -1,0 +1,4 @@
+<?
+$MESS["BISEXPERT_OWLSLIDER_COMPOSITE_INIT"] = "Загрузка..";
+$MESS["BISEXPERT_OWLSLIDER_DEV_LINK"] = "True Slider by BIS-Expert";
+?>

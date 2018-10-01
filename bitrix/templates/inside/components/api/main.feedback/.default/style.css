@@ -1,0 +1,17 @@
+.form-input label{display:block; margin-bottom:5px;}
+
+.ts-alert{
+padding: 10px;
+text-align: center;
+color: #FFF;
+margin-bottom: 20px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.ts-alert p{
+color:#fff;
+margin-bottom:0;
+}
+.ts-alert.ts-alert-danger{background: #B93232;}
+.ts-alert.ts-alert-success{background: #24A71B;}

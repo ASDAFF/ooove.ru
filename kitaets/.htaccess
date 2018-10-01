@@ -1,0 +1,93 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag session.use_trans_sid off
+  #php_value display_errors 1
+  #php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^kitaets\.ru$ [NC]
+  RewriteRule ^(.*)$ http://www.kitaets.ru/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+#RewriteRule ^(.*)$ http://kitaets.ru/$1 [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://www.kitaets.ru/ [R=301,L] 
+
+Redirect 301 /catalog/1920/ http://www.kitaets.ru/catalog/3787/
+Redirect 301 /catalog/2666/ http://www.kitaets.ru/catalog/4717/
+Redirect 301 /catalog/1808/ http://www.kitaets.ru/catalog/3606/
+Redirect 301 /catalog/1780/ http://www.kitaets.ru/catalog/3574/
+Redirect 301 /catalog/1679/ http://www.kitaets.ru/catalog/3464/
+Redirect 301 /catalog/1910/ http://www.kitaets.ru/catalog/3787/
+Redirect 301 /catalog/2431/ http://www.kitaets.ru/catalog/3352/
+Redirect 301 /catalog/2294/ http://www.kitaets.ru/catalog/4095/
+Redirect 301 /catalog/2553/ http://www.kitaets.ru/catalog/3283/
+Redirect 301 /catalog/2294/ http://www.kitaets.ru/catalog/4095/
+Redirect 301 /catalog/1982/ http://www.kitaets.ru/catalog/3709/
+Redirect 301 /catalog/2322/ http://www.kitaets.ru/catalog/4181/
+Redirect 301 /catalog/2066/ http://www.kitaets.ru/catalog/3890/
+Redirect 301 /catalog/2376/ http://www.kitaets.ru/catalog/4155/
+Redirect 301 /catalog/2083/ http://www.kitaets.ru/catalog/4026/
+Redirect 301 /catalog/2388/ http://www.kitaets.ru/catalog/3166/
+Redirect 301 /catalog/1934/ http://www.kitaets.ru/catalog/3787/ 
+Redirect 301 /catalog/2665/ http://www.kitaets.ru/catalog/4718/
+Redirect 301 /catalog/1858/ http://www.kitaets.ru/catalog/3640/
+Redirect 301 /catalog/2400/ http://www.kitaets.ru/catalog/3167/
+Redirect 301 /catalog/1894/ http://www.kitaets.ru/catalog/3787/
+Redirect 301 /catalog/1868/ http://www.kitaets.ru/catalog/3838/
+Redirect 301 /catalog/2015/ http://www.kitaets.ru/catalog/3967/
+Redirect 301 /catalog/2567/ http://www.kitaets.ru/catalog/3245/
+Redirect 301 /catalog/1779/ http://www.kitaets.ru/catalog/3574/
+Redirect 301 /catalog/1557/ http://www.kitaets.ru/catalog/4530/
+Redirect 301 /catalog/1990/ http://www.kitaets.ru/catalog/3867/
+Redirect 301 /catalog/2295/ http://www.kitaets.ru/catalog/4096/
+Redirect 301 /catalog/1591/ http://www.kitaets.ru/catalog/4312/
+Redirect 301 /catalog/1867/ http://www.kitaets.ru/catalog/3708/
+Redirect 301 /catalog/2348/ http://www.kitaets.ru/catalog/4123/
+Redirect 301 /catalog/2815/ http://www.kitaets.ru/catalog/4625/
+Redirect 301 /catalog/1532/ http://www.kitaets.ru/catalog/4530/
+Redirect 301 /catalog/2597/ http://www.kitaets.ru/catalog/3303/
+Redirect 301 /catalog/1592/ http://www.kitaets.ru/catalog/4331/
+Redirect 301 /catalog/2665/ http://www.kitaets.ru/catalog/4717/
+Redirect 301 /catalog/2195/ http://www.kitaets.ru/catalog/4639/
+Redirect 301 /catalog/2120/ http://www.kitaets.ru/catalog/3991/
+Redirect 301 /catalog/2503/ http://www.kitaets.ru/catalog/3192/
+Redirect 301 /catalog/2410/ http://www.kitaets.ru/catalog/3324/
+Redirect 301 /catalog/1942/ http://www.kitaets.ru/catalog/3737/
+Redirect 301 /catalog/2677/ http://www.kitaets.ru/catalog/4837/
+Redirect 301 /catalog/1810/ http://www.kitaets.ru/catalog/3624/
+Redirect 301 /catalog/2458/ http://www.kitaets.ru/catalog/4725/
+Redirect 301 /catalog/2917/ http://www.kitaets.ru/catalog/3460/
+Redirect 301 /catalog/2815/ http://www.kitaets.ru/catalog/4625/
+Redirect 301 /catalog/2670/ http://www.kitaets.ru/catalog/4722/
+Redirect 301 /catalog/1632/ http://www.kitaets.ru/catalog/4313/
+Redirect 301 /catalog/2816/ http://www.kitaets.ru/catalog/4626/
+Redirect 301 /catalog/2636/ http://www.kitaets.ru/catalog/4797/
+Redirect 301 /catalog/3073/ http://www.kitaets.ru/catalog/4625/
+Redirect 301 /catalog/2377/ http://www.kitaets.ru/catalog/4155/

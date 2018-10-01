@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) and (min-width: 710px){
+
+/* TOP PANEL */
+.login-box .search{display:none;}
+.login-box .search-mobile{
+display:inline-block;
+width:70px;
+height:40px;
+background:url(/images/lupa2.png) no-repeat 0 50%;
+vertical-align:middle;
+color:#fff;
+font-size:12px;
+text-transform:uppercase;
+padding-left:25px;
+line-height:40px;
+}
+.top-menu{display:none;}
+
+/* HEADER */
+.header .logo{width:230px; height:93px; margin-right:0px;}
+.header .logo img{width:100%;}
+
+.middle-inner .main-menu{display:none;}
+.top-menu-mobile{
+float: none;
+display: block;
+clear: both;
+padding:0;
+}
+.top-menu-mobile li {
+display: inline-block;
+text-align: center;
+border-right:none;
+}
+
+.phone-box {
+float: none;
+padding-top: 15px;
+position: absolute;
+right: 15px;
+top: 15px;
+}
+.phone-box .phone {
+display:inline-block;
+margin-left:30px;
+}
+
+/* CATALOG */
+.catalog-list {padding: 0;}
+
+/* TESTDRIVE */
+.testdrive-video{padding:0;}
+
+/* FOOTER */
+.footer-inner{padding:50px 15px;}
+.footer-inner .phone-box{
+float: none;
+padding-top: 15px;
+position: absolute;
+right: 15px;
+top: 20px;
+}
+.footer-inner .phone-box .phone{
+display:block;
+float:none;
+margin-bottom:20px;
+}
+
+
+}
