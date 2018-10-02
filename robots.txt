@@ -8,7 +8,6 @@ Disallow: /*clear_cache=
 Disallow: /*clear_cache_session=
 Disallow: /*ADD_TO_COMPARE_LIST
 Disallow: /*ORDER_BY
-Disallow: /*PAGEN
 Disallow: /*?print=
 Disallow: /*&print=
 Disallow: /*print_course=
@@ -33,11 +32,11 @@ Disallow: /*?q=
 Disallow: /*&q=
 Disallow: /price/
 Disallow: /catalog/compare/
-Sitemap: https://ooove.ru/sitemap.xml
 Allow: /bitrix/components/
 Allow: /bitrix/cache/
 Allow: /bitrix/js/
 Allow: /bitrix/templates/
 Allow: /bitrix/panel/
 Allow: /personal_data/
+Sitemap: https://ooove.ru/sitemap.xml
 Host: https://ooove.ru

@@ -842,7 +842,7 @@ abstract class CAllMain
 		$this->ShowMeta("robots", false, $bXhtmlStyle);
 		// $this->ShowMeta("keywords", false, $bXhtmlStyle);
 		$this->ShowMeta("description", false, $bXhtmlStyle);
-		$this->ShowLink("canonical", null, $bXhtmlStyle);
+		//$this->ShowLink("canonical", null, $bXhtmlStyle);
 		$this->ShowCSS(true, $bXhtmlStyle);
 		$this->ShowHeadStrings();
 		$this->ShowHeadScripts();

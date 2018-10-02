@@ -29,6 +29,28 @@ else
 {
 	$colorScheme = "";
 }
+	
+	// START WebSEO.kz Michael Nossov:
+    if(intval($arResult["NavNum"]) == 1){
+	    $wsasset = \Bitrix\Main\Page\Asset::getInstance();
+	    $wsuri = 'https://' . $_SERVER['HTTP_HOST'] . str_replace('index.php', '', $APPLICATION->GetCurPage(true));
+	    if ($arResult["NavPageNomer"] != 1) {
+		    // если это не первая страница, то добавляем метатег rel=prev
+		    // только к первой не добавляется окончание ?PAGEN_1=1
+		    $wspprev = '';
+		    if($arResult["NavPageNomer"] != 2){
+			    $wspprev = '?PAGEN_'.$arResult["NavNum"].'='.($arResult["NavPageNomer"]-1);
+		    }
+		    $wsasset->addString('<link rel="prev" href="' . $wsuri . $wspprev.'">');
+	    }
+	    if($arResult["NavPageNomer"] != $arResult["NavPageCount"]) {
+		    // если это не последняя страница, то добавляем метатег rel=next
+		    $wsasset->addString('<link rel="next" href="' . $wsuri . '?PAGEN_'.$arResult["NavNum"].'='.($arResult["NavPageNomer"]+1).'">');
+	    }
+    }
+	
+	// END WebSEO.kz
+ 
 ?>
 
 <div class="bx-pagination <?=$colorScheme?>">
@@ -39,7 +61,7 @@ else
 	<?if ($arResult["NavPageNomer"] < $arResult["NavPageCount"]):?>
 		<?if($arResult["bSavePage"]):?>
 			<li class="bx-pag-prev"><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=($arResult["NavPageNomer"]+1)?>"><span><?echo GetMessage("round_nav_back")?></span></a></li>
-			<li class=""><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=($arResult["NavPageNomer"]+1)?>"><span>1</span></a></li>
+			<li class=""><a href="<?=$arResult["sUrlPath"]?><?=$strNavQueryStringFull?>"><span>1</span></a></li>
 		<?else:?>
 			<?if (($arResult["NavPageNomer"]+1) == $arResult["NavPageCount"]):?>
 				<li class="bx-pag-prev"><a href="<?=$arResult["sUrlPath"]?><?=$strNavQueryStringFull?>"><span><?echo GetMessage("round_nav_back")?></span></a></li>
@@ -85,7 +107,7 @@ else
 	<?if ($arResult["NavPageNomer"] > 1):?>
 		<?if($arResult["bSavePage"]):?>
 			<li class="bx-pag-prev"><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=($arResult["NavPageNomer"]-1)?>"><span><?echo GetMessage("round_nav_back")?></span></a></li>
-			<li class=""><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=1"><span>1</span></a></li>
+			<li class=""><a href="<?=$arResult["sUrlPath"]?><?=$strNavQueryStringFull?>"><span>1</span></a></li>
 		<?else:?>
 			<?if ($arResult["NavPageNomer"] > 2):?>
 				<li class="bx-pag-prev"><a href="<?=$arResult["sUrlPath"]?>?<?=$strNavQueryString?>PAGEN_<?=$arResult["NavNum"]?>=<?=($arResult["NavPageNomer"]-1)?>"><span><?echo GetMessage("round_nav_back")?></span></a></li>

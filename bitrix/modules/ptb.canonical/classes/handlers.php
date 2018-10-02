@@ -142,7 +142,7 @@ class Handlers
             $uri->deleteParams($arDeleteGet);
         }
         
-        Page\Asset::getInstance()->addString('<link rel="canonical" href="' . $uri->getUri() . '" />', true);
+        //Page\Asset::getInstance()->addString('<link rel="canonical" href="' . $uri->getUri() . '" />', true);
     }
 
     protected static function setCanonicalByRegExp($curPage, $isManySite, $cacheTime)

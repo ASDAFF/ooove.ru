@@ -4,6 +4,22 @@ $APPLICATION->SetTitle("");
 CJSCore::Init(array("fx"));
 $curPage = $APPLICATION->GetCurPage(true);
 $theme = COption::GetOptionString("main", "wizard_eshop_bootstrap_theme_id", "blue", SITE_ID);
+
+// START WebSEO.kz Michael Nossov:
+$wsasset = \Bitrix\Main\Page\Asset::getInstance();
+$wscanonical = 'https://' . $_SERVER['HTTP_HOST'] . str_replace('index.php', '', $APPLICATION->GetCurPage(true));
+$wspagenum = '';
+if(isset($_REQUEST['PAGEN_1']) && !empty($_REQUEST['PAGEN_1']) && intval($_REQUEST['PAGEN_1']) > 1){
+	$wscanonical .= '?PAGEN_1='.$_REQUEST['PAGEN_1'];
+	// Если эта страница с пагинацией, то добавляем в Title и Description фразу "Страница 2", "Страница 3" и т.д. (кроме первой страницы)
+	$wspagenum = ' → Страница '.$_REQUEST['PAGEN_1'];
+	$wsdesc = $APPLICATION->GetProperty('description');
+	$APPLICATION->SetPageProperty('description', $wsdesc.$wspagenum);
+}
+// ко всем страницам сайта длбавляем канонический URL
+$wsasset->addString('<link rel="canonical" href="' . $wscanonical . '">');
+// END WebSEO.kz
+
 ?><!DOCTYPE html>
 <html xml:lang="<?=LANGUAGE_ID?>" lang="<?=LANGUAGE_ID?>">
 <head>
@@ -19,7 +35,8 @@ $theme = COption::GetOptionString("main", "wizard_eshop_bootstrap_theme_id", "bl
 	$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");
 	$APPLICATION->SetAdditionalCSS("/bitrix/css/main/font-awesome.css");
 	?>
-	<title><?$APPLICATION->ShowTitle()?></title>
+	<title><?$APPLICATION->ShowTitle()?><?=$wspagenum?></title>
+ 
 </head>
 
 <body class="bx-background-image bx-theme-<?=$theme?>" <?=$APPLICATION->ShowProperty("backgroundImage")?>>
