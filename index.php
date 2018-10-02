@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("keywords_inner", "запчасти на китайские авто");
 $APPLICATION->SetTitle("Оптовый интернет-магазин запчастей для китайских автомобилей.");
 ?><div class="row">
-	<div class="col-md-5" valign="top">
+	<div class="col-md-5">
 		 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.filter",
 	"flat_ooove",
@@ -28,7 +28,7 @@ $APPLICATION->SetTitle("Оптовый интернет-магазин запч�
 	)
 );?>
 	</div>
-	<div class="col-md-7" valign="top">
+	<div class="col-md-7">
 		<div class="row">
 			<div class="col-md-4">
  <b><a href="/price/"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Скачать прайс-лист</a></b>

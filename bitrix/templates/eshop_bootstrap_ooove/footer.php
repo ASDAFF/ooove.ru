@@ -346,7 +346,7 @@
 				<div class="col-sm-5 col-md-3 col-md-push-3">
 					<div style="padding: 20px;background:#eaeaeb;color:black;">
 						<p>OOOVE это:</p>
-						<ul align="left">
+						<ul>
 						<li>Крупный поставщик качественных запчастей для китайских автомобилей</li>
 						<li>Официальные поставки запчастей из Китая</li>
 						</ul>

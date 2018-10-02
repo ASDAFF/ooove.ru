@@ -131,7 +131,7 @@ $wsasset->addString('<link rel="canonical" href="' . $wscanonical . '">');
 					<div class="bx-logo">
 						<a href="<?=SITE_DIR?>">
 							<div class="hidden-xs">
-							<img src="/include/ooove_logo.png" srcset="/include/ooove_log.png x2" style="max-height:50px;" alt="Запчасти для китайских автомобилей оптом в Москве">
+							<img src="/include/ooove_logo.png" style="max-height:50px;" alt="Запчасти для китайских автомобилей оптом в Москве">
 							</div>
 							<div class="hidden-lg hidden-md hidden-sm">
 								<img src="/include/ooove_logo.png" style="max-height:30px;text-align:center;" alt="Запчасти для китайских автомобилей оптом в Москве">
