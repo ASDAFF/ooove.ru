@@ -144,7 +144,7 @@ $field_name_url = preg_replace("/[^a-z0-9_\\[\\]:]/i", "", $_REQUEST['field_name
 $alt_name = preg_replace("/[^a-z0-9_\\[\\]:]/i", "", $_REQUEST['alt_name']);
 ?>
 
-<script type="text/javascript">
+<script>
 function SelEl(id, name, url)
 {
 	<?if ($new_value=="Y"):?>

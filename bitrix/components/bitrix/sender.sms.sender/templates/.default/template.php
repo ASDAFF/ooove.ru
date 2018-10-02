@@ -16,7 +16,7 @@ use Bitrix\Main\Localization\Loc;
 
 $containerId = 'bx-sender-sms-sender';
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.SMS.Sender.init(<?=Json::encode(array(
 			'containerId' => $containerId,

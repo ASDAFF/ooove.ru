@@ -486,7 +486,7 @@ $tabControl->End();
 
 <div style="display: none;"><?=Admin\OrderEdit::getFastNavigationHtml($fastNavItems, $formId, 'tab_order');?></div>
 
-<script type="text/javascript">
+<script>
 	BX.ready( function(){
 		BX.Sale.Admin.OrderAjaxer.sendRequest(
 			BX.Sale.Admin.OrderEditPage.ajaxRequests.getOrderTails("<?=$saleOrder->getId()?>", "view", "<?=$basketPrefix?>"),

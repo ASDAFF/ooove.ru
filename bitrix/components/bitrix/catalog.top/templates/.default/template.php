@@ -50,7 +50,7 @@ if (!empty($arResult['ITEMS']))
 			break;
 	}
 	?>
-	<script type='text/javascript'>
+	<script>
 	   BX.message({
 		   BTN_MESSAGE_BASKET_REDIRECT: '<?=GetMessageJS('CT_BCT_CATALOG_BTN_MESSAGE_BASKET_REDIRECT')?>',
 		   BASKET_URL: '<?=$arParams['BASKET_URL']?>',

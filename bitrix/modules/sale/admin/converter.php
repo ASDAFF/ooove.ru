@@ -5003,7 +5003,7 @@ switch ($step)
 	<?endif;?>
 </form>
 <?if ($step > $stepsBeforeAjax):?>
-	<script type="text/javascript">
+	<script>
 		function startConverter()
 		{
 			BX.show(BX('ajax_result'));			

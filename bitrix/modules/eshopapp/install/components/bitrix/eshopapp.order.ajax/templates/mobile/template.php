@@ -33,7 +33,7 @@ else
 	else
 	{
 		?>
-	<script type="text/javascript">
+	<script>
 		app.setPageTitle({"title" : "<?=GetMessage("SOA_ORDER_TITLE")?>"});
 	</script>
 	<a name="order_fform"></a>

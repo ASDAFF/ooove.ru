@@ -41,7 +41,7 @@ $APPLICATION->SetAdditionalCSS("/bitrix/gadgets/bitrix/admin_perfmon/site_speed.
 $currentHost = preg_replace("/:(80|443)$/", "", $_SERVER["HTTP_HOST"]);
 $currentHost = CUtil::JSEscape($currentHost);
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function() {
 
 		BX.ajax({

@@ -29,7 +29,7 @@ class CComponentParamsManager
 
 		$mess_lang = self::GetLangMessages();
 		?>
-		<script type="text/javascript">
+		<script>
 			BX.message(<?=CUtil::PhpToJSObject($mess_lang, false);?>);
 			if (window.BXComponentParamsManager)
 			{

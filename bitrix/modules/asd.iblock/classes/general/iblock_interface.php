@@ -28,7 +28,7 @@ class CASDiblockInterface {
 
 		if ($bRightPage && !empty($list->arActions)) {
 			CJSCore::Init(array('asd_iblock'));
-			$strSomeScripts  = '<script type="text/javascript">sListTable = \''.$list->table_id.'\';</script>';
+			$strSomeScripts  = '<script>sListTable = \''.$list->table_id.'\';</script>';
 			$list->arActions['asd_checkbox_manager'] = array('type' => 'html', 'value' => $strSomeScripts);
 		}
 
@@ -37,7 +37,7 @@ class CASDiblockInterface {
 			$jsParams = array(
 				'resultDiv' => $list->table_id.'_result_div'
 			);
-			$list->sPrologContent .= '<script type="text/javascript">
+			$list->sPrologContent .= '<script>
 var asdElementList'.$list->table_id.' = new AsdIblockElementList('.CUtil::PhpToJSObject($jsParams, false, true, true).');
 </script>';
 		}
@@ -236,7 +236,7 @@ var asdElementList'.$list->table_id.' = new AsdIblockElementList('.CUtil::PhpToJ
 			$jsParams = array(
 				'resultDiv' => $list->table_id.'_result_div'
 			);
-			$list->sPrologContent .= '<script type="text/javascript">
+			$list->sPrologContent .= '<script>
 var asdElementList'.$list->table_id.' = new AsdIblockElementList('.CUtil::PhpToJSObject($jsParams, false, true, true).');
 </script>';
 			}

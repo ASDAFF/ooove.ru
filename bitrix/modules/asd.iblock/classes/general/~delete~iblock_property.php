@@ -316,7 +316,7 @@ class CASDiblockPropPalette {
 		} else {
 			CJSCore::Init(array('asd_palette'));
 			$strResult = '<input type="text" name="'.htmlspecialcharsbx($strHTMLControlName['VALUE']).'" id="'.htmlspecialcharsbx($strID).'" value="'.htmlspecialcharsbx($arValue['VALUE']).'" />';
-			$strResult .= '<script type="text/javascript">
+			$strResult .= '<script>
 				BX.ready(function()
     			{
       				$(\'#'.htmlspecialcharsbx($strID).'\').jPicker({images: {clientPath : \'/bitrix/js/asd.iblock/jpicker/images/\'}});
@@ -330,7 +330,7 @@ class CASDiblockPropPalette {
 		$strID = preg_replace('/[^a-zA-Z0-9_]/i', 'x', $strHTMLControlName["VALUE"]);
 		CJSCore::Init(array('asd_palette'));
 		$strResult = '<input type="text" name="'.htmlspecialcharsbx($strHTMLControlName['VALUE']).'" id="'.htmlspecialcharsbx($strID).'" value="'.htmlspecialcharsbx($arValue['VALUE']).'" />';
-		$strResult .= '<script type="text/javascript">
+		$strResult .= '<script>
 			BX.ready(function()
    			{
      			$(\'#'.htmlspecialcharsbx($strID).'\').jPicker({images: {clientPath : \'/bitrix/js/asd.iblock/jpicker/images/\'}});

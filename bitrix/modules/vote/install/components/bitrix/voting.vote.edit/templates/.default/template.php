@@ -112,7 +112,7 @@ $sAnswerEmpty = preg_replace(array("/\<\!\-\-A\_ID\-\-\>(.+?)\<\!\-\-\/A\_ID\-\-
 		<a class="vote-new-question-link addq" href="javascript:void(0);"><?=GetMessage("VVE_QUESTION_ADD")?></a>
 	</div>
 </div>
-<script type="text/javascript">
+<script>
 BX.message({
 	VVE_ANS_DELETE:'<?=GetMessageJS("VVE_ANS_DELETE")?>',
 	VVE_QUESTION_DELETE:'<?=GetMessageJS("VVE_QUESTION_DELETE")?>',

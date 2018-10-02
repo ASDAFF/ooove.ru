@@ -12,7 +12,7 @@ if(!empty($_SESSION['SUBSCRIBE_PRODUCT']['LIST_PRODUCT_ID']))
 }
 
 if($templateData['jsObject']): ?>
-<script type="text/javascript">
+<script>
 	BX.ready(BX.defer(function(){
 		if (!!window.<?= $templateData['jsObject']; ?>)
 		{

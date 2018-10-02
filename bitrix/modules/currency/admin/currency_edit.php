@@ -197,7 +197,7 @@ $context->Show();
 if (!empty($errorMessage))
 	CAdminMessage::ShowMessage(implode('<br>', $errorMessage));
 
-?><script type="text/javascript">
+?><script>
 function setTemplate(lang)
 {
 	var arFormat = [], arPoint = [], arThousand = [], arDecimals = [],
@@ -366,7 +366,7 @@ echo GetMessage('DECIMALS_COMMENTS');
 echo GetMessage('HIDE_ZERO_DECIMALS_DESCR_EXT');
 echo EndNote();
 ?>
-<script type="text/javascript">
+<script>
 BX.ready(function(){
 <?
 foreach ($langID as $index)

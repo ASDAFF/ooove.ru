@@ -191,7 +191,7 @@ echo $siteSelector;
 				<div class="landing-item-status-inner">
 					<?/*if ($item['DATE_MODIFY_UNIX'] > $item['DATE_PUBLIC_UNIX']):*/?>
 					<span class="landing-item-status landing-item-status-unpublished"><?/*= Loc::getMessage('LANDING_TPL_UNPUBLIC');*/?></span>
-					<span class="landing-item-status landing-item-status-changed">Изменена</span>
+					<span class="landing-item-status landing-item-status-changed">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</span>
 					<?/*else:*/?>
 					<span class="landing-item-status landing-item-status-published"><?/*= Loc::getMessage('LANDING_TPL_PUBLIC');*/?></span>
 					<?/*endif;*/?>
@@ -205,7 +205,7 @@ echo $siteSelector;
 </div>
 
 
-<script type="text/javascript">
+<script>
 	BX.SidePanel.Instance.bindAnchors({
 		rules: [
 			{

@@ -16,7 +16,7 @@ if(isset($_REQUEST['PAGEN_1']) && !empty($_REQUEST['PAGEN_1']) && intval($_REQUE
 	$wsdesc = $APPLICATION->GetProperty('description');
 	$APPLICATION->SetPageProperty('description', $wsdesc.$wspagenum);
 }
-// ко всем страницам сайта длбавляем канонический URL
+// ко всем страницам сайта добавляем канонический URL
 $wsasset->addString('<link rel="canonical" href="' . $wscanonical . '">');
 // END WebSEO.kz
 

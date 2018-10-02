@@ -129,7 +129,7 @@ $APPLICATION->SetPageProperty("BodyClass", "main");
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	app.setPageTitle({"title" : "<?=htmlspecialcharsbx(COption::GetOptionString("main", "site_name", ""))?>"});
 	function openSectionList()
 	{

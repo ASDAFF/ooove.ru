@@ -91,7 +91,7 @@ $APPLICATION->SetPageProperty('BodyClass', ($bodyClass ? $bodyClass.' ' : '') . 
 
 
 
-<script type="text/javascript">
+<script>
 	if (
 		typeof BX.SidePanel !== 'undefined' &&
 		typeof BX.SidePanel.Instance !== 'undefined'

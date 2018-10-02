@@ -105,7 +105,7 @@ use Bitrix\Main\Localization\Loc;
 			<?endif;?>
 		</form>
 	</div>
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 			BX.Main.Mail.Unsubscriber.init({'containerId': 'main-mail-unsubscribe-container'});
 		})

@@ -170,7 +170,7 @@ else
 	if ($arParams["PREORDER"] == "Y"): ?><?=$arParams["NAV_STRING"]?><? endif;
 }
 ?>
-<script type="text/javascript">
+<script>
 BX.ready(function(){
 	window["UC"]["<?=$arParams["ENTITY_XML_ID"]?>"] = new FCList({
 			ENTITY_XML_ID : '<?=$arParams["ENTITY_XML_ID"]?>',

@@ -160,7 +160,7 @@ $template = new Template($arResult);
 								<div class="landing-social-img">
 									<img src="/bitrix/images/1.gif" alt="" id="landing-social-picture" />
 								</div>
-								<script type="text/javascript">
+								<script>
 									BX.ready(function(){
 										new BX.Landing.EditComponent({
 											publicUrl: "<?= \htmlspecialcharsbx($instance->getPublicUrl())?>"

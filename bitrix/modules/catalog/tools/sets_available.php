@@ -119,7 +119,7 @@ else
 		)
 	);
 	?>
-<script type="text/javascript">
+<script>
 var jsStepOperations = new BX.Catalog.StepOperations(<? echo CUtil::PhpToJSObject($jsParams, false, true); ?>);
 </script>
 	<?

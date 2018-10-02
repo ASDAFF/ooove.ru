@@ -12,7 +12,7 @@ Loc::loadMessages(dirname(__FILE__) . '/template.php');
 
 ob_start();
 ?>
-<script type="text/javascript">
+<script>
 	BX.message({
 		LANDING_TPL_JS_PAY_TARIFF: '<?= \CUtil::jsEscape(Loc::getMessage('LANDING_TPL_JS_PAY_TARIFF'));?>'
 	});
@@ -55,7 +55,7 @@ elseif ($request->get('IFRAME') == 'N')
 		'IFRAME'
 	));
 	?>
-	<script type="text/javascript">
+	<script>
 		window.top.location.href = "<?= \CUtil::JSEscape($redirect->getUri());?>";
 	</script>
 	<?

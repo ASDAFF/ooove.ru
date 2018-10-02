@@ -478,12 +478,12 @@ class CPullOptions
 						
 					});
 JS;
-					Asset::getInstance()->addString('<script type="text/javascript">'.$pullInitJs.'</script>');
+					Asset::getInstance()->addString('<script>'.$pullInitJs.'</script>');
 				}
 				else
 				{
 					$pullConfig = CPullChannel::GetConfig($userId);
-					$APPLICATION->AddAdditionalJS('<script type="text/javascript">BX.bind(window, "load", function() { BX.PULL.start('.(empty($pullConfig)? '': CUtil::PhpToJsObject($pullConfig)).'); });</script>');
+					$APPLICATION->AddAdditionalJS('<script>BX.bind(window, "load", function() { BX.PULL.start('.(empty($pullConfig)? '': CUtil::PhpToJsObject($pullConfig)).'); });</script>');
 
 				}
 			}

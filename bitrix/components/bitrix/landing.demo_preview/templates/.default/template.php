@@ -115,7 +115,7 @@ $uriSelect->deleteParams(array(
     </div>
 </div>
 
-<script type="text/javascript">
+<script>
 	// Force init template preview layout
 	BX.Landing.TemplatePreview.getInstance();
 </script>

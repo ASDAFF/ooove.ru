@@ -154,7 +154,7 @@ $bVarsFromForm = false;
 $userId = intval($USER->GetID());
 
 ?>
-<script type="text/javascript">
+<script>
 	function makeMeasureTable()
 	{
 		var mainSectionId = BX('CLASSIFIER_MAIN_SECTION').value;

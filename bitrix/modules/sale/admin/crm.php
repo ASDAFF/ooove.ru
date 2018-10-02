@@ -584,7 +584,7 @@ if ($_REQUEST["success"] == "Y")
 			<div class="crm-admin-button-text"><?= GetMessage("SPTEN_SCRM_REG_BTN_24_HINT") ?></div>
 		</span>
 	</div>
-	<script type="text/javascript">
+	<script>
 		function SaleCrmAdminShowRegForm(v)
 		{
 			document.getElementById("id_new_crm_reg_form").style.display = v ? "" : "none";
@@ -619,7 +619,7 @@ if ($_REQUEST["success"] == "Y")
 						<br/>
 						<br/>
 						<input type="checkbox" class="crm-admin-set-checkbox" id="id_CRM_BUS_USER_SET_C" name="CRM_BUS_USER_SET_C" value="Y"<?= ($_REQUEST["CRM_BUS_USER_SET_C"] == "Y") ? " checked" : "" ?> onclick="SaleCrmAdminShowRegFormUser(this.checked)"/><label for="id_CRM_BUS_USER_SET_C"><span class="crm-admin-set-checkbox-label"><?= GetMessage("SPTEN_SCRM_CRM_BUS_USER_SET") ?></span></label>
-						<script type="text/javascript">
+						<script>
 							function SaleCrmAdminShowRegFormUser(v)
 							{
 								document.getElementById("id_CRM_BUS_USER_SET_C_login").style.display = v ? "none" : "";
@@ -656,7 +656,7 @@ if ($_REQUEST["success"] == "Y")
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $do_create_link == "Y")
 {
 	?>
-	<script type="text/javascript">
+	<script>
 		SaleCrmAdminShowRegForm(true);
 		SaleCrmAdminShowRegFormUser(<?= ($_REQUEST["CRM_BUS_USER_SET_C"] == "Y") ? "true" : "false" ?>);
 	</script>

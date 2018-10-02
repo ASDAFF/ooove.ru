@@ -17,7 +17,7 @@ $fieldValue = htmlspecialcharsbx($arParams['~VALUE']);
 $isBlock = $arResult['DISPLAY_BLOCK_EDITOR'];
 $containerId = 'bx-sender-message-editor-mail-' . $fieldName;
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Mail.Editor.init(<?=Json::encode(array(
 			'id' => $arParams['INPUT_NAME'],

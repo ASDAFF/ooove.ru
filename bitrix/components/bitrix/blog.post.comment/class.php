@@ -1112,7 +1112,7 @@ class CBlogPostCommentEdit extends CBitrixComponent
 		}
 		
 		$scriptStr = "
-			<script type=\"text/javascript\">
+			<script>
 				BX.ready(function(){
 					__blogLinkEntity({" .
 			CUtil::JSEscape($xmlId) . " : ['BG', " . $arParams["ID"] . ", '" . $arParams["LOG_ID"] . "']},";

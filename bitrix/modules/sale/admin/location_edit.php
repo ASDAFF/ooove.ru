@@ -711,7 +711,7 @@ $tabControl->BeginNextTab();
 			</div>
 			<button onClick='return zip_add()'><?=GetMessage('SALE_ADD_ZIP')?></button>
 			</td>
-<script type="text/javascript">
+<script>
 BX.ready(function() {
 	BX.addCustomEvent(document.forms.fform, 'onAutoSaveRestore', function(ob, data) {
 		if (data['ZIP[]'] && BX.type.isArray(data['ZIP[]']) && data['ZIP[]'].length > <?=$cnt?>)

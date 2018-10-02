@@ -1064,7 +1064,7 @@ class CCatalogAdminProductSetEdit
 				'CELL_PARAMS' => $arCellInfo['CELL_PARAMS']
 			);
 			?>
-<script type="text/javascript">
+<script>
 if (!window.ob<?=$blockName; ?>)
 {
 	window.ob<?=$blockName; ?> = new JCCatTblEditExt(<? echo CUtil::PhpToJSObject($arJSParams); ?>);

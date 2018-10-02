@@ -94,7 +94,7 @@ foreach ($arResult["ITEMS"] as $arItem)
 		</a>';
 
 	if(isset($arItem['TOGGLABLE']) && $arItem['TOGGLABLE'] == true)
-		$itemHtml .= '<script type="text/javascript">'.
+		$itemHtml .= '<script>'.
 						'BX.ready(function(){ mobileAppList.makeFastButton("mobile-list-item-'.$arItem["ID"].'");})'.
 					'</script>';
 
@@ -116,7 +116,7 @@ echo $finalHtml;
 ?>
 		</div>
 
-<script type="text/javascript">
+<script>
 
 	<?if(isset($arParams["TITLE"])):?>
 		app.setPageTitle({title: "<?=$arParams["TITLE"]?>"});

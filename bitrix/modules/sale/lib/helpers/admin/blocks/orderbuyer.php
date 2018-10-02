@@ -169,7 +169,7 @@ class OrderBuyer
 		\Bitrix\Sale\PropertyValueCollection::initJs();
 		$langPhrases = array("SALE_ORDER_BUYER_CREATE_NEW", "SALE_ORDER_BUYER_UNKNOWN_GROUP");
 
-		$result = '<script type="text/javascript">'.
+		$result = '<script>'.
 			'BX.Sale.Admin.OrderBuyer.isFeatureSaleAccountsEnabled = '.(\CBXFeatures::IsFeatureEnabled('SaleAccounts') ? 'true' : 'false').';';
 
 		foreach($langPhrases as $phrase)
@@ -670,7 +670,7 @@ class OrderBuyer
 		}
 
 		return '
-			<script type="text/javascript">
+			<script>
 				BX.ready(function(){
 					BX.Sale.Admin.OrderBuyer.setOrderPropsArray('.\CUtil::PhpToJSObject($result).');
 				});
@@ -683,7 +683,7 @@ class OrderBuyer
 		$result = self::getRelPropData($order);
 
 		return '
-			<script type="text/javascript">
+			<script>
 				BX.ready(function(){
 					BX.Sale.Admin.OrderBuyer.setOrderRelPropsArray('.\CUtil::PhpToJSObject($result).');
 

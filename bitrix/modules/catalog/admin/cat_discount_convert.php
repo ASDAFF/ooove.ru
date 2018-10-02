@@ -45,7 +45,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (isset($_REQUEST["Convert"]) && 'Y' 
 			"HTML"=>true,
 			"TYPE"=>"OK",
 		));
-		?><script type="text/javascript">
+		?><script>
 			BX.closeWait();
 			DoNext(<?=CCatalogDiscountConvert::$intConverted; ?>, <?=$maxMessage?>, <?=CCatalogDiscountConvert::$intNextConvertPerStep; ?>, '<?=CUtil::JSEscape(CCatalogDiscountConvert::$strSessID); ?>');
 		</script><?
@@ -89,7 +89,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (isset($_REQUEST["Convert"]) && 'Y' 
 			"TYPE" => "OK",
 		));
 		CAdminNotify::DeleteByTag("CATALOG_DISC_CONVERT");
-		?><script type="text/javascript">
+		?><script>
 			BX.closeWait();
 			EndConvert();
 		</script><?
@@ -106,7 +106,7 @@ else
 	$tabControl = new CAdminTabControl("tabControl", $aTabs, true, true);
 
 	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
-	?><script type="text/javascript">
+	?><script>
 	var stop;
 	var interval = 0;
 	function StartConvert(maxMessage)
@@ -194,7 +194,7 @@ else
 	<?
 	$tabControl->End();
 	?></form>
-	<script type="text/javascript">
+	<script>
 	BX.ready(function(){
 		var obStartButton = BX('start_button');
 		if (!!obStartButton)

@@ -105,7 +105,7 @@ Asset::getInstance()->addJS('/bitrix/components/bitrix/landing.sites/templates/.
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function ()
 	{
 		var items = [].slice.call(document.querySelectorAll('.landing-template-pseudo-link'));

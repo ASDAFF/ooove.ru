@@ -198,7 +198,7 @@ foreach ($arResult['ATTACHES'] as $attach)
 		}
 	?></div><?
 ?>
-<script type="text/javascript">
+<script>
 BX.ready(function() {
 	BX.message({
 		VOTE_ERROR_DEFAULT : '<?=GetMessageJS("VOTE_ERROR_DEFAULT")?>'

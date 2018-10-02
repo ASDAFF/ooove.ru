@@ -208,7 +208,7 @@ if (
 	{
 		if ($subWindow)
 		{
-			?><script type="text/javascript">
+			?><script>
 top.BX.closeWait(); top.BX.WindowManager.Get().AllowClose(); top.BX.WindowManager.Get().Close();
 top.ReloadSubList();
 </script><?
@@ -227,7 +227,7 @@ elseif ($subWindow)
 {
 	if ((string)$request->get('dontsave') != '')
 	{
-		?><script type="text/javascript">top.BX.closeWait(); top.BX.WindowManager.Get().AllowClose(); top.BX.WindowManager.Get().Close();</script><?
+		?><script>top.BX.closeWait(); top.BX.WindowManager.Get().AllowClose(); top.BX.WindowManager.Get().Close();</script><?
 		die();
 	}
 }
@@ -441,7 +441,7 @@ if ($multiCoupons)
 	$control->Buttons(false, '');
 	$control->Show();
 ?>
-<script type="text/javascript">
+<script>
 	var couponType = BX('<?=$prefix.'TYPE'; ?>'),
 		maxUse = BX('<?=$prefix.'MAX_USE'; ?>'),
 		rowMaxUse;
@@ -634,7 +634,7 @@ else
 	}
 	$control->Show();
 ?>
-<script type="text/javascript">
+<script>
 BX.ready(function(){
 	var obCouponValue = BX('COUPON'),
 		obCouponBtn = BX('COUPON_GENERATE'),

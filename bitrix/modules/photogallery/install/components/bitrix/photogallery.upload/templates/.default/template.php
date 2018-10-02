@@ -148,7 +148,7 @@ else
 	$htmlSettings = implode("", $htmlSettings);
 	$htmlSettings = <<<HTML
 <div class="bxiu-add-params">$htmlSettings<div style="clear: both"></div></div>
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		new BX.UploaderSettings({$params});
 	})
@@ -337,7 +337,7 @@ $params = array_merge($arParams["bxu"]->params, array(
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		new BX.UploaderTemplateThumbnails(<?=CUtil::PhpToJSObject($params)?>);
 	});

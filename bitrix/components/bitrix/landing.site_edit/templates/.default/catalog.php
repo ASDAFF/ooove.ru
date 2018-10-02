@@ -128,7 +128,7 @@ else
 												<input type="hidden" id="fieldSectionIdReal" <?
 													?>name="fields[ADDITIONAL_FIELDS][SETTINGS_SECTION_ID]" <?
 													?>value="<?= intval($field->getValue());?>">
-												<script type="text/javascript">
+												<script>
 													var fieldSection = new BX.Landing.UI.Field.LinkURL({
 														title: "",
 														textOnly: true,
@@ -199,10 +199,10 @@ else
 
 	<div class="<?if ($request->get('IFRAME') == 'Y'){?>landing-edit-footer-fixed <?}?>pinable-block">
 		<div class="landing-form-footer-container">
-			<button id="landing-save-btn" type="submit" class="ui-btn ui-btn-success"  name="submit"  value="Сохранить" id="" title="Сохранить и перейти к просмотру" >
+			<button id="landing-save-btn" type="submit" class="ui-btn ui-btn-success"  name="submit"  value="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" id="" title="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" >
 				<?= Loc::getMessage('LANDING_TPL_BUTTON_' . ($arParams['SITE_ID'] ? 'SAVE' : 'ADD'));?>
 			</button>
-			<a class="ui-btn ui-btn-md ui-btn-link"<?if ($request->get('IFRAME') == 'Y'){?> id="action-close"<?}?> href="<?= $arParams['PAGE_URL_SITES']?>" title="Не сохранять и вернуться">
+			<a class="ui-btn ui-btn-md ui-btn-link"<?if ($request->get('IFRAME') == 'Y'){?> id="action-close"<?}?> href="<?= $arParams['PAGE_URL_SITES']?>" title="пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ">
 				<?= Loc::getMessage('LANDING_TPL_BUTTON_CANCEL')?>
 			</a>
 		</div>
@@ -210,7 +210,7 @@ else
 
 </form>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		// for save
 		new BX.Landing.SaveBtn(BX('landing-save-btn'));

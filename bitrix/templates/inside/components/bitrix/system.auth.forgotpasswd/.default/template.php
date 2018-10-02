@@ -9,6 +9,6 @@
 	<input type="submit" name="send_account_info" value="<?=GetMessage("AUTH_SEND")?>" class="btn red" />
 	<a href="<?=$arResult["AUTH_AUTH_URL"]?>" class="btn gray"><?=GetMessage("AUTH_AUTH")?></a>
 </form>
-<script type="text/javascript">
+<script>
 	document.bform.USER_LOGIN.focus();</script>
 </div>

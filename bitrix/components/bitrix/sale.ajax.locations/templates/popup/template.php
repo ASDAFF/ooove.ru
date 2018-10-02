@@ -37,7 +37,7 @@ if ($arParams["AJAX_CALL"] != "Y"
 	onfocus="loc_sug_CheckThis(this, this.id);"
 	<?=($arResult["SINGLE_CITY"] == "Y" ? " disabled" : "")?>/>
 <input type="hidden" name="<?echo $arParams["CITY_INPUT_NAME"]?>" id="<?echo $arParams["CITY_INPUT_NAME"]?>" value="<?=$arParams["LOCATION_VALUE"]?>">
-<script type="text/javascript">
+<script>
 
 	if (typeof oObject != "object")
 		window.oObject = {};

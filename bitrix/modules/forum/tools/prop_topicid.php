@@ -127,7 +127,7 @@ function FindTopicID($tag_name, $tag_value, $topic_name="", $form_name = "form1"
 <IFRAME style=\"width:0px; height:0px; border: 0px\" src=\"javascript:void(0)\" name=\"hiddenframe".$tag_name."\" id=\"hiddenframe".$tag_name."\"></IFRAME>
 <input class=\"".$button_class."\" type=\"button\" name=\"FindTopic\" id=\"FindTopic\" OnClick=\"window.open('".CUtil::addslashes($search_page)."?lang=".LANGUAGE_ID."&FN=".CUtil::addslashes($form_name)."&FC=".CUtil::addslashes($tag_name)."', '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));\" value=\"".$button_value."\">
 <span id=\"div_".$tag_name."\">".$topic_name."</span>
-<script type=\"text/javascript\">
+<script>
 top.tv".$tag_name_x."='".($topic_name=="" ? '' : CUtil::JSEscape($tag_value))."';
 top.Change".$tag_name_x." = function()
 {

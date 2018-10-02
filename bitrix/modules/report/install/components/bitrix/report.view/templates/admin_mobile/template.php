@@ -491,6 +491,6 @@ unset($arGroupingResult);
 	</table>
 </div></div>
 <?php endif; ?>
-<script type="text/javascript">
+<script>
 	app.setPageTitle({title: "<?=GetMessage('REPORT_REPORT').": ".$arResult['report']['TITLE']?>"});
 </script>

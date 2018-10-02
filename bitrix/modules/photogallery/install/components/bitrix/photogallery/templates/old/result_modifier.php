@@ -2,7 +2,7 @@
 \Bitrix\Main\Localization\Loc::loadMessages(__FILE__);
 $GLOBALS['APPLICATION']->AddHeadString('<script src="/bitrix/js/main/utils.js"></script>', true);
 
-?><script type="text/javascript">
+?><script>
 if (typeof(phpVars) != "object")
 	phpVars = {};
 if (!phpVars.cookiePrefix)

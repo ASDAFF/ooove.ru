@@ -410,7 +410,7 @@ final class VoteUserType
 							Loc::getMessage("V_HOURS"), Loc::getMessage("V_DAYS"))
 					),
 					$value["DELAY_TYPE"]);?>
-				<script type="text/javascript">
+				<script>
 					BX.ready(function(){
 						if (!!document.forms.post_form.MULTIPLE)
 							BX.hide(document.forms.post_form.MULTIPLE.parentNode.parentNode);

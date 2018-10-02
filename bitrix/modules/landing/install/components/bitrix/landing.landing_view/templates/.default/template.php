@@ -223,7 +223,7 @@ else
 			overflow: hidden;
 		}
 	</style>
-	<script type="text/javascript">
+	<script>
 		BX.ready(function() {
 			var settingButtons = [].slice.call(document.querySelectorAll('.landing-ui-panel-top-menu-link-settings'));
 			var settingsMenuIds = [];

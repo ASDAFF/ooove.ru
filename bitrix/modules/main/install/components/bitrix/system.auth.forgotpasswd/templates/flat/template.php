@@ -67,7 +67,7 @@ if(!empty($arParams["~AUTH_RESULT"])):
 
 </div>
 
-<script type="text/javascript">
+<script>
 document.bform.onsubmit = function(){document.bform.USER_EMAIL.value = document.bform.USER_LOGIN.value;};
 document.bform.USER_LOGIN.focus();
 </script>

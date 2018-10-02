@@ -116,7 +116,7 @@ if($arParams['PLACEMENT'] !== \Bitrix\Rest\PlacementTable::PLACEMENT_DEFAULT)
 		<?=GetMessage('REST_LOADING', array('#APP_NAME#' =>  htmlspecialcharsbx($arResult['APP_NAME'])))?>
 	</div>
 </div>
-<script type="text/javascript">
+<script>
 BX.rest.AppLayout.set(
 	'<?=\CUtil::JSEscape($arParams['PLACEMENT'])?>',
 	'<?=$arResult['APP_SID']?>',

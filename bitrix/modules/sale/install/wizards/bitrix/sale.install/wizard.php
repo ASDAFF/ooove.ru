@@ -397,7 +397,7 @@ class Step4 extends CWizardStep
 			}
 		}
 		?>
-		<script type="text/javascript">
+		<script>
 		var arUserFieldsList = new Array();
 		var arUserFieldsNameList = new Array();
 		var arOrderFieldsList = new Array();

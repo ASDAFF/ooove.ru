@@ -323,7 +323,7 @@ $tabControl->End();
 ?>
 </form>
 
-<script type="text/javascript">
+<script>
 	BX.message({
 		"SALE_EBAY_EXCHANGE_OK": "<?=\CUtil::JSEscape(Loc::getMessage("SALE_EBAY_EXCHANGE_OK"))?>",
 		"SALE_EBAY_EXCHANGE_ERROR": "<?=\CUtil::JSEscape(Loc::getMessage("SALE_EBAY_EXCHANGE_ERROR"))?>"

@@ -3415,7 +3415,7 @@ $APPLICATION->SetTitle(Loc::getMessage("SALE_SECTION_TITLE"));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 
 ?>
-<script type="text/javascript">
+<script>
 function fToggleSetItems(setParentId)
 {
 	var elements = document.getElementsByClassName('set_item_' + setParentId);
@@ -3587,7 +3587,7 @@ $oFilter->Begin();
 	<tr>
 		<td><?echo Loc::getMessage("SALE_F_ID");?>:</td>
 		<td>
-			<script type="text/javascript">
+			<script>
 				function filter_id_from_Change()
 				{
 					if(document.find_form.filter_id_to.value.length<=0)
@@ -3899,7 +3899,7 @@ $oFilter->Begin();
 	<tr>
 		<td><?echo Loc::getMessage("SO_PRODUCT_ID")?></td>
 		<td>
-			<script type="text/javascript">
+			<script>
 			function FillProductFields(arParams)
 			{
 				if(arParams["id"])
@@ -3958,7 +3958,7 @@ $oFilter->Begin();
 			<IFRAME name="hiddenframe_affiliate" id="id_hiddenframe_affiliate" src="" width="0" height="0" style="width:0px; height:0px; border: 0px"></IFRAME>
 			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bitrix/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
 			<span id="div_affiliate_name"></span>
-			<script type="text/javascript">
+			<script>
 			function SetAffiliateID(id)
 			{
 				document.find_form.filter_affiliate_id.value = id;
@@ -4127,7 +4127,7 @@ echo BeginNote();
 ?>
 <span id="order_sum"><? echo $order_sum;?></span>
 
-<script type="text/javascript">
+<script>
 	function sendDeliveryRequestsForCurrentOrders(selectedOnly)
 	{
 		var ordersListForm = BX('form_tbl_sale_order');
@@ -4164,7 +4164,7 @@ echo BeginNote();
 <?$spotlight = new \Bitrix\Main\UI\Spotlight("DELIVERY_REQUESTS_ADDED");?>
 <?if(!$spotlight->isViewed($USER->GetID())):?>
 	<?\CJSCore::init("spotlight");?>
-	<script type="text/javascript">
+	<script>
 		BX.ready(
 			function() {
 				var elem = document.getElementsByClassName('adm-list-table-top');

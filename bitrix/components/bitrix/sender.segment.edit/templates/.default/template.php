@@ -263,7 +263,7 @@ $containerId = 'bx-sender-segment-edit';
 
 	</form>
 
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 
 			BX.Sender.Connector.Manager.init(<?=Json::encode(array(

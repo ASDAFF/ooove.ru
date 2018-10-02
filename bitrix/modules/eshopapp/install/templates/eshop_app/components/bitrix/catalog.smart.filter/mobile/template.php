@@ -61,7 +61,7 @@
 					/>
 				</div>
 			</div>
-			<script type="text/javascript" defer="defer">
+			<script defer="defer">
 				var DoubleTrackBar_<?=$key?> = new touchTrackBar('drag_track_<?=$key?>', 'drag_tracker_<?=$key?>', 'left_slider_<?=$key?>', 'right_slider_<?=$key?>',
 				{
 					MinPrice: parseFloat(<?=$arItem["VALUES"]["MIN"]["VALUE"]?>),

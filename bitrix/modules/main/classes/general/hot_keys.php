@@ -649,7 +649,7 @@ class CHotKeys
 			if(!is_array($arHK))
 				continue;
 
-			$retHtml .= "<script type='text/javascript'> var d = BX('".$arCode["TITLE_OBJ"]."'); if (!d) d=BX.findChild(document, {attribute: {'name': '".$arCode["TITLE_OBJ"]."'}}, true ); if(d) d.title+=' (".$space.Cutil::JSEscape($this->ShowHKAsChar($arHK["KEYS_STRING"])).$space.") ';</script>";
+			$retHtml .= "<script> var d = BX('".$arCode["TITLE_OBJ"]."'); if (!d) d=BX.findChild(document, {attribute: {'name': '".$arCode["TITLE_OBJ"]."'}}, true ); if(d) d.title+=' (".$space.Cutil::JSEscape($this->ShowHKAsChar($arHK["KEYS_STRING"])).$space.") ';</script>";
 		}
 
 		return $retHtml;
@@ -678,7 +678,7 @@ class CHotKeys
 			$retStr = ' if(window.BXHotKeys!==undefined) { '.$retStr.' } ';
 
 		if($scriptTags == true)
-			$retStr = '<script type="text/javascript">'.$retStr.'</script>';
+			$retStr = '<script>'.$retStr.'</script>';
 
 		return $retStr;
 	}
@@ -918,7 +918,7 @@ class CHotKeys
 			return false;
 
 		global $USER;
-		$htmlOut = "<script type='text/javascript'>
+		$htmlOut = "<script>
 			BXHotKeys.MesNotAssign = '".GetMessageJS("HK_NOT_ASSIGN")."';
 			BXHotKeys.MesClToChange = '".GetMessageJS("HK_CLICK_TO_CHANGE")."';
 			BXHotKeys.MesClean = '".GetMessageJS("HK_CLEAN")."';

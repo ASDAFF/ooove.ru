@@ -205,7 +205,7 @@ $domains = $arResult['DOMAINS'];
 
 </form>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		new BX.Landing.EditComponent({
 		});

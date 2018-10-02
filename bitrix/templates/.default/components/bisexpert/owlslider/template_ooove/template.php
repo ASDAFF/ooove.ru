@@ -71,7 +71,7 @@
 		</tr>
 	</table>
 
-    <script type="text/javascript">
+    <script>
         (function ($) {
             $(function() {
 

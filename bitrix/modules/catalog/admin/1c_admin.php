@@ -247,7 +247,7 @@ if ($USER->CanDoOperation('catalog_read')) :
 			?></td></tr><?
 		}
 		?>
-	<script type="text/javascript">
+	<script>
 	var controls = <?echo CUtil::PhpToJSObject($arOptionsDeps)?>;
 	function Check(checkbox)
 	{

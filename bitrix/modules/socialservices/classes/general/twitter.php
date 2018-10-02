@@ -114,7 +114,7 @@ class CSocServTwitter extends CSocServAuth
 			$url .= (preg_match("/\?/", $url) ? '&' : '?').CSocServUtil::getOAuthProxyString();
 
 			echo '
-<script type="text/javascript">
+<script>
 if(window.opener)
 	window.opener.location = \''.CUtil::JSEscape($url).'\';
 window.close();

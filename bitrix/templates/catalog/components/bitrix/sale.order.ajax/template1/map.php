@@ -231,7 +231,7 @@ $rnd = "or".randString(4);
 <input type="hidden" name="POPUP_STORE_ID" id="POPUP_STORE_ID" value="<?=$arDefaultStore["ID"]?>" >
 <input type="hidden" name="POPUP_STORE_NAME" id="POPUP_STORE_NAME" value="<?=$arDefaultStore["TITLE"]?>" >
 
-<script type="text/javascript">
+<script>
 	function setChangeStore(id)
 	{
 		var store = arStore[id];

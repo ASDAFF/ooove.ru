@@ -173,7 +173,7 @@ $ORDER_ID = IntVal($GLOBALS["SALE_INPUT_PARAMS"]["ORDER"]["ID"]);
 			$address1_def = htmlspecialcharsbx(CSalePaySystemAction::GetParamValue("ADDRESS"));
 			$zipcode_def = htmlspecialcharsbx(CSalePaySystemAction::GetParamValue("ZIP"));
 			?>
-			<script type="text/javascript">
+			<script>
 			function checkFields(frm)
 			{
 				if (frm.elements['cardnum'].value == '')

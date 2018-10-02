@@ -4440,7 +4440,7 @@ class CGlobalCondTree
 
 			}
 
-			$strResult .= '<script type="text/javascript">'."\n";
+			$strResult .= '<script>'."\n";
 			$strResult .= 'var '.$this->strJSName.' = new BX.TreeConditions('."\n";
 			$strResult .= $this->ShowParams().",\n";
 			$strResult .= $this->ShowConditions().",\n";

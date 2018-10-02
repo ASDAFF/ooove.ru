@@ -56,7 +56,7 @@ if ($isBitrix24Template)
 			$this->__component,
 			array('HIDE_ICONS' => true)
 		);?>
-		<script type="text/javascript">
+		<script>
 			var landingAjaxPath = '<?= \CUtil::jsEscape($uriAjax->getUri());?>';
 		</script>
 	</div>
@@ -69,7 +69,7 @@ if ($isBitrix24Template)
 
 	<div class="landing-filter-buttons-container">
 		<?if ($arParams['SETTING_LINK']):?>
-			<script type="text/javascript">
+			<script>
 				var lastLocation = top.location.toString();
 				BX.SidePanel.Instance.bindAnchors({
 					rules: [
@@ -128,7 +128,7 @@ if ($isBitrix24Template)
 						<?= \htmlspecialcharsbx($buuton['TITLE']);?>
 					</a>
 				</div>
-				<script type="text/javascript">
+				<script>
 					var actionsMenuIds = [];
 					var onActionsClick = function(event) {
 						actionsMenuIds.push('landing-menu-action');

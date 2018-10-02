@@ -43,7 +43,7 @@ if ($request->get('IFRAME') == 'N')
 		'IFRAME'
 	));
 	?>
-	<script type="text/javascript">
+	<script>
 		window.top.location.href = "<?= \CUtil::JSEscape($redirect->getUri());?>";
 	</script>
 	<?

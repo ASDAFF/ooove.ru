@@ -144,7 +144,7 @@ if ($STEP==1)
 		'class="adm-detail-iblock-list"'
 	);
 	?>
-		<script type="text/javascript">
+		<script>
 		var TreeSelected = new Array();
 		<?
 		$intCountSelected = 0;
@@ -170,7 +170,7 @@ if ($STEP==1)
 	<td width="40%" valign="top"><?echo GetMessage("CET_SELECT_GROUP");?></td>
 	<td width="60%">
 		<div id="tree"></div>
-		<script type="text/javascript">
+		<script>
 		BX.showWait();
 		clevel = 0;
 
@@ -313,7 +313,7 @@ if (2 > $STEP)
 
 $tabControl->End();
 ?></form>
-<script type="text/javascript">
+<script>
 <?if ($STEP < 2):?>
 tabControl.SelectTab("edit1");
 tabControl.DisableTab("edit2");

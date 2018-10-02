@@ -102,7 +102,7 @@ class Template
 		$code = strtolower($field->getCode());
 		$code = preg_replace('/[^a-z]+/', '', $code);
 		?>
-		<script type="text/javascript">
+		<script>
 			BX.ready(function()
 			{
 				var imageFieldWrapper = BX('<?= $params['imgId']?>');

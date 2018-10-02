@@ -500,7 +500,7 @@ class forumTextParser extends CTextParser
 				(
 				!$this->bMobile
 				&& $ajaxPage
-					? '<script type="text/javascript">BX.tooltip(\''.$userId.'\', "bp_'.$anchorId.'", "'.CUtil::JSEscape($ajaxPage).'");</script>'
+					? '<script>BX.tooltip(\''.$userId.'\', "bp_'.$anchorId.'", "'.CUtil::JSEscape($ajaxPage).'");</script>'
 					: ''
 				)
 				: ''

@@ -601,7 +601,7 @@ class Asset
 		$res = '';
 		if($location == AssetLocation::AFTER_CSS && \CJSCore::IsCoreLoaded())
 		{
-			$res = "<script type=\"text/javascript\">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>\n";
+			$res = "<script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>\n";
 		}
 
 		if(isset($this->strings[$location]))
@@ -1056,11 +1056,11 @@ class Asset
 	{
 		if($inline)
 		{
-			return '<script type="text/javascript"'.$label.'>'."\n".$js."\n</script>\n";
+			return '<script'.$label.'>'."\n".$js."\n</script>\n";
 		}
 		else
 		{
-			return '<script type="text/javascript" '.$label.' src="'.$js.'"></script>'."\n";
+			return '<script '.$label.' src="'.$js.'"></script>'."\n";
 		}
 	}
 
@@ -1543,7 +1543,7 @@ class Asset
 
 		if($this->ajax && !empty($ajaxList))
 		{
-			$res .= '<script type="text/javascript">'."BX.loadCSS(['".implode("','", $ajaxList)."']);".'</script>';
+			$res .= '<script>'."BX.loadCSS(['".implode("','", $ajaxList)."']);".'</script>';
 		}
 
 		if($type == AssetShowTargetType::KERNEL)
@@ -1619,7 +1619,7 @@ class Asset
 						if($jsFile['SKIP'])
 						{
 							$this->fileList['JS'][$setInfo['NAME']]['FILES'][] = $js;
-							$resJs .= '<script type="text/javascript" src="'.$js.'"></script>'."\n";
+							$resJs .= '<script src="'.$js.'"></script>'."\n";
 						}
 						else
 						{
@@ -1629,7 +1629,7 @@ class Asset
 					else
 					{
 						$this->fileList['JS'][$setInfo['NAME']]['FILES'][] = $js;
-						$resJs .= '<script type="text/javascript" src="'.$js.'"></script>'."\n";
+						$resJs .= '<script src="'.$js.'"></script>'."\n";
 					}
 				}
 				$optAsset = $this->optimizeAsset($listAsset, $setInfo['UNIQUE'], $setInfo['PREFIX'], $setInfo['NAME'], 'js', $data);
@@ -1739,7 +1739,7 @@ class Asset
 
 			if(!empty($assetList))
 			{
-				$res .= '<script type="text/javascript">'."BX.setJSList(['".implode("','", array_map(array($this, "getAssetPath"), $assetList))."']); </script>\n";
+				$res .= '<script>'."BX.setJSList(['".implode("','", array_map(array($this, "getAssetPath"), $assetList))."']); </script>\n";
 			}
 		}
 
@@ -1760,7 +1760,7 @@ class Asset
 
 			if(!empty($assetList))
 			{
-				$res .= '<script type="text/javascript">'."BX.setCSSList(['".implode("','", array_map(array($this, "getAssetPath"), $assetList))."']); </script>\n";
+				$res .= '<script>'."BX.setCSSList(['".implode("','", array_map(array($this, "getAssetPath"), $assetList))."']); </script>\n";
 			}
 		}
 		return $res;

@@ -68,7 +68,7 @@ class CAdminPage
 			$APPLICATION->GetCSSArray()
 		);
 
-		$s = '<script type="text/javascript" bxrunfirst>'."\n";
+		$s = '<script bxrunfirst>'."\n";
 		for ($i = 0, $cnt = count($arCSS); $i < $cnt; $i++)
 		{
 			$bExternalLink = (strncmp($arCSS[$i], 'http://', 7) == 0 || strncmp($arCSS[$i], 'https://', 8) == 0);
@@ -171,7 +171,7 @@ class CAdminPage
 		//PHP-depended variables
 		$aUserOpt = CUserOptions::GetOption("global", "settings");
 		$s = "
-<script type=\"text/javascript\">
+<script>
 var phpVars = {
 	'ADMIN_THEME_ID': '".CUtil::JSEscape(ADMIN_THEME_ID)."',
 	'LANGUAGE_ID': '".CUtil::JSEscape(LANGUAGE_ID)."',
@@ -982,7 +982,7 @@ class CAdminMenu
 						$menuScripts .= $this->Show($submenu, $level);
 					}
 					if ($menuScripts != "")
-						echo '<script type="text/javascript">'.$menuScripts.'</script>';
+						echo '<script>'.$menuScripts.'</script>';
 				}
 				elseif($mode == "icon")
 					$this->ShowIcons($aMenu);
@@ -1235,7 +1235,7 @@ class CAdminPopupEx extends CAdminPopup
 				$params = ', '.CUtil::PhpToJsObject($params);
 
 			$s .=
-"<script type=\"text/javascript\">
+"<script>
 BX.ready(function(){
 	BX.bind(BX('".$this->element_id."'), 'click', function() {
 		BX.adminShowMenu(this, ".CAdminPopup::PhpToJavaScript($this->items).$params.");
@@ -1360,7 +1360,7 @@ class CAdminContextMenu
 	{
 		$id = 'context_right_'.RandString(8);
 ?>
-<script type="text/javascript">BX.ready(function(){
+<script>BX.ready(function(){
 var right_bar = BX('<?=$id?>');
 BX.Fix(right_bar, {type: 'right', limit_node: BX.previousSibling(right_bar)});
 })</script>
@@ -1950,7 +1950,7 @@ class CAdminChain
 		if ($chainScripts != '')
 		{
 ?>
-<script type="text/javascript"><?=$chainScripts?></script>
+<script><?=$chainScripts?></script>
 <?
 		}
 
@@ -2115,7 +2115,7 @@ function ShowJSHint($text, $arParams=false)
 	$id = "h".mt_rand();
 
 	$res = '
-		<script type="text/javascript">BX.ready(function(){BX.hint_replace(BX("'.$id.'"), "'.CUtil::JSEscape($text).'");})</script>
+		<script>BX.ready(function(){BX.hint_replace(BX("'.$id.'"), "'.CUtil::JSEscape($text).'");})</script>
 		<span id="'.$id.'"></span>
 	';
 

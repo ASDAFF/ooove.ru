@@ -331,7 +331,7 @@ class CSocServGoogleOAuth extends CSocServAuth
 		}
 
 		$JSScript = '
-		<script type="text/javascript">
+		<script>
 		'.$location.'
 		</script>
 		';

@@ -16,7 +16,7 @@ use Bitrix\Main\Localization\Loc;
 
 $containerId = 'sender-ui-mailbox-selector';
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.UI.Mailbox.Selector.init(<?=Json::encode(array(
 			'containerId' => $containerId,

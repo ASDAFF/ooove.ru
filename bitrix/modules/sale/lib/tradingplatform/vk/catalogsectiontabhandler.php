@@ -321,7 +321,7 @@ class CatalogSectionTabHandler extends TabHandler
 
 //		SCRIPTS for beauty
 		$resultHtml .= "
-			<script type=\"text/javascript\">
+			<script>
 				BX.ready(function(){
 				
 					var exportIds = BX.findChild(BX('table_EXPORT_PROFILES'), {class: 'vk_export__profile_id'}, true, true);

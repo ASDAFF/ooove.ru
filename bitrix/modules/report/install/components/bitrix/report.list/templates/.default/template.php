@@ -252,7 +252,7 @@ if($arResult['NEED_DISPLAY_UPDATE_14_5_2_MESSAGE']):
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX(function () {
 
 		BX.Report['<?=$jsClass?>'] = new BX.Report.ReportListClass({

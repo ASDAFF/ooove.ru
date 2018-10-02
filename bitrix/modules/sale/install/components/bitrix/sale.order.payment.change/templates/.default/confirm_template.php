@@ -170,7 +170,7 @@ else
 		if (!$arResult['IS_CASH'])
 		{
 			?>
-			<script type="text/javascript">
+			<script>
 				window.open("<?=$arResult['PAYMENT_LINK']?>");
 			</script>
 			<?

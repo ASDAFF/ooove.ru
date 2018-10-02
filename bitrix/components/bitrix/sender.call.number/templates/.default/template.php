@@ -16,7 +16,7 @@ use Bitrix\Main\Localization\Loc;
 
 $containerId = 'bx-sender-call-number';
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Call.Number.init(<?=Json::encode(array(
 			'containerId' => $containerId,

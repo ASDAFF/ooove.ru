@@ -472,7 +472,7 @@ class Helper
 			null,
 			array('HIDE_ICONS' => 'Y')
 		);
-		?><script type="text/javascript"><?
+		?><script><?
 		foreach($userSelectors as $userSelector)
 		{
 			$selectorID = $userSelector['ID'];

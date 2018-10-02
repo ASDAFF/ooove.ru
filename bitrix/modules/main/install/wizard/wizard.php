@@ -152,7 +152,7 @@ class AgreementStep extends CWizardStep
 		$this->content .= '&nbsp;<label for="agree_license_id">'.InstallGetMessage("LICENSE_AGREE_PROMT").'</label>';
 
 		$wizard =& $this->GetWizard();
-		$this->content .= '<script type="text/javascript">setTimeout(function() {document.getElementById("agree_license_id").focus();}, 500);</script>';
+		$this->content .= '<script>setTimeout(function() {document.getElementById("agree_license_id").focus();}, 500);</script>';
 	}
 
 }
@@ -192,7 +192,7 @@ class AgreementStep4VM extends CWizardStep
 		$this->content = '<iframe name="license_text" src="/license.php" width="100%" height="250" border="0" frameBorder="1" scrolling="yes"></iframe><br /><br />';
 		$this->content .= $this->ShowCheckboxField("agree_license", "Y", Array("id" => "agree_license_id", "tabindex" => "1"));
 		$this->content .= '&nbsp;<label for="agree_license_id">'.InstallGetMessage("LICENSE_AGREE_PROMT").'</label>';
-		$this->content .= '<script type="text/javascript">setTimeout(function() {document.getElementById("agree_license_id").focus();}, 500);</script>';
+		$this->content .= '<script>setTimeout(function() {document.getElementById("agree_license_id").focus();}, 500);</script>';
 	}
 
 }
@@ -437,7 +437,7 @@ class DBTypeStep extends CWizardStep
 				</td>
 			</tr>
 			</table>
-			<script type="text/javascript">
+			<script>
 				setTimeout(function() {
 					if(document.getElementById("license_id"))
 					{
@@ -1089,7 +1089,7 @@ RewriteRule ^.+\.php$ /bitrix/httest/404.php
 				<td valign="top">'.InstallGetMessage("SC_HTACCESS").'</td>
 				<td valign="top">'.InstallGetMessage("SC_TURN_ON2").'</td>
 				<td valign="top"><span id="httest">'.$this->ShowResult(InstallGetMessage("SC_TESTING"), "N").'</span>
-				<script type="text/javascript">
+				<script>
 					req = false;
 					if(window.XMLHttpRequest)
 					{
@@ -2387,7 +2387,7 @@ class CreateDBStep extends CWizardStep
 				</td>
 			</tr>
 		</table>
-		<script type="text/javascript">NeedRootUser();</script>';
+		<script>NeedRootUser();</script>';
 	}
 }
 
@@ -2808,7 +2808,7 @@ class CreateModulesStep extends CWizardStep
 		$firstStage = (defined("BX_UTF") ? "utf8" : "database");
 
 		$this->content .= '
-			<script type="text/javascript">
+			<script>
 				var ajaxForm = new CAjaxForm("'.$formName.'", "iframe-post-form", "'.$NextStepVarName.'");
 				ajaxForm.Post("main", "'.$firstStage.'", "'.InstallGetMessage("INST_MAIN_MODULE").' ('.( defined("BX_UTF") ? "UTF-8" : InstallGetMessage("INST_INSTALL_DATABASE") ).')");
 			</script>
@@ -3164,7 +3164,7 @@ class SelectWizardStep extends CWizardStep
 		$arWizardsList = BXInstallServices::GetWizardsList();
 
 		$this->content = '
-		<script type="text/javascript">
+		<script>
 			function SelectSolution(element, solutionId)
 			{
 				var hidden = document.getElementById("id_'.CUtil::JSEscape($prefixName).'");
@@ -3429,7 +3429,7 @@ class LoadModuleStep extends CWizardStep
 			$this->SetError($errorMessage);
 
 		$this->content .= '
-		<script type="text/javascript">
+		<script>
 			function SelectSolutionMP(element, solutionId)
 			{
 				var hidden = document.getElementById("id_'.CUtil::JSEscape($prefixName).'");
@@ -3791,7 +3791,7 @@ class LoadModuleActionStep extends CWizardStep
 		$NextStepVarName = $wizard->GetRealName("nextStep");
 
 		$this->content .= '
-			<script type="text/javascript">
+			<script>
 				var ajaxForm = new CAjaxForm("'.$formName.'", "iframe-post-form", "'.$NextStepVarName.'");
 				ajaxForm.Post("do_load_module", "'.$nextStepStage.'", "'.InstallGetMessage("INS_MODULE_LOADING").'");
 			</script>
@@ -3917,7 +3917,7 @@ class SelectWizard1Step extends SelectWizardStep
 		$arWizardsList = BXInstallServices::GetWizardsList($selectedModule);
 
 		$this->content = '
-		<script type="text/javascript">
+		<script>
 			function SelectSolution(element, solutionId)
 			{
 				var hidden = document.getElementById("id_'.CUtil::JSEscape($prefixName).'");

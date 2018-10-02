@@ -553,7 +553,7 @@ if (!$couponsReadOnly)
 }
 if (!isset($_REQUEST["mode"]) || ($_REQUEST["mode"] != 'excel' && $_REQUEST["mode"] != 'subsettings'))
 {
-	?><script type="text/javascript">
+	?><script>
 	function ShowNewCoupons(id, multi)
 	{
 		var PostParams = {

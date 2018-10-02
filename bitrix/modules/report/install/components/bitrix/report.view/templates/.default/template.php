@@ -780,7 +780,7 @@ function getResultColumnDataType(&$viewColumnInfo, &$customColumnTypes = array()
 	?>
 	<div style="margin-bottom: 14px;"><a id="report-chart-showhide" class="report-chart-show"><?= GetMessage('REPORT_CHART_HIDE') ?></a></div>
 	<div id="report-chart-container" class="graph"<?php echo ($chartErrorCode > 0) ? '' : ' style="height: 540px;"'; ?>><?= htmlspecialcharsbx($chartErrorMessage) ?></div>
-	<script type="text/javascript">
+	<script>
 		function reportChartShowHide()
 		{
 			var chartContainer = BX("report-chart-container");
@@ -1191,7 +1191,7 @@ function getResultColumnDataType(&$viewColumnInfo, &$customColumnTypes = array()
 			</tr>
 
 		</table>
-		<script type="text/javascript">
+		<script>
 		BX.ready(function(){
 			var rows = BX.findChildren(BX('report-result-table'), {tag:'th'}, true);
 			for (i = 0 ; i < rows.length ; i++)
@@ -1313,7 +1313,7 @@ function getResultColumnDataType(&$viewColumnInfo, &$customColumnTypes = array()
 			<option value="true"><?=GetMessage('REPORT_BOOLEAN_VALUE_TRUE')?></option>
 			<option value="false"><?=GetMessage('REPORT_BOOLEAN_VALUE_FALSE')?></option>
 		</select>
-		<script type="text/javascript">
+		<script>
 			function RTFilter_chooseBooleanCatch(value)
 			{
 				setSelectValue(RTFilter_chooseBoolean_LAST_CALLER, value);
@@ -1411,7 +1411,7 @@ function getResultColumnDataType(&$viewColumnInfo, &$customColumnTypes = array()
 				?>"><input type="text" size="5" class="filter-date-days"
 						value="<?= htmlspecialcharsbx($arResult['form_date']['days']) ?>"
 						name="F_DATE_DAYS"/> <?php echo GetMessage("TASKS_REPORT_DAYS"); ?></span>
-				<script type="text/javascript">
+				<script>
 
 					function OnTaskIntervalChange(select)
 					{
@@ -1529,7 +1529,7 @@ function getResultColumnDataType(&$viewColumnInfo, &$customColumnTypes = array()
 					);
 				}
 			?>
-			<script type="text/javascript">
+			<script>
 
 			BX.ready(function() {
 				var info = <?=CUtil::PhpToJSObject($info)?>;
@@ -1650,7 +1650,7 @@ function getResultColumnDataType(&$viewColumnInfo, &$customColumnTypes = array()
 				<input id="report-rewrite-filter-button" type="submit" value="<?=GetMessage('REPORT_FILTER_APPLY')?>" class="filter-submit">&nbsp;&nbsp;<input id="report-reset-filter-button" type="submit" name="del_filter_company_search" value="<?=GetMessage('REPORT_FILTER_CANCEL')?>" class="filter-submit">
 			</div>
 
-			<script type="text/javascript">
+			<script>
 
 			BX.ready(function(){
 				BX.bind(BX('report-reset-filter-button'), 'click', function(){
@@ -1934,7 +1934,7 @@ if (is_array($arResult['STEXPORT_PARAMS']))
 	Bitrix\Main\Page\Asset::getInstance()->addJs('/bitrix/js/report/lrpdialog.js');
 	Bitrix\Main\Page\Asset::getInstance()->addJs('/bitrix/js/report/stexport.js');
 	?>
-	<script type="text/javascript">
+	<script>
 		BX.ready(
 			function()
 			{

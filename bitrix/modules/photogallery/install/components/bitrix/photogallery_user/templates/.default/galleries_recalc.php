@@ -189,7 +189,7 @@ if ($_REQUEST["AJAX"] == "Y" && check_bitrix_sessid())
 	<div id="photogallery_error" style="display: none;" class="errortext">
 	</div>
 </div>
-<script type="text/javascript">
+<script>
 var phpVars;
 if (typeof(phpVars) != "object")
 	var phpVars = {};

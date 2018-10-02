@@ -23,7 +23,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $templateFolder.'/dialogs/functions.php');
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
+<script>
 
 app.addButtons({
 	cancelButton:

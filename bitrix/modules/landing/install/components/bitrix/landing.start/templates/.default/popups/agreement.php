@@ -26,7 +26,7 @@ $id = 'landing-agreement-popup';
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function()
 	{
 		var accept = false;

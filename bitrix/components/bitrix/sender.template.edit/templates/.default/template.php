@@ -14,7 +14,7 @@ use Bitrix\Sender\Internals\PrettyDate;
 /** @var array $arResult */
 $containerId = 'bx-sender-template-edit';
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Message.Editor.init(<?=Json::encode(array(
 			'containerId' => $containerId,

@@ -3,7 +3,7 @@ CUtil::InitJSCore(array('translit', 'autosave'));
 $postMessageTabIndex = $tabIndex = $arParams["tabIndex"];
 $fileControlId = 'forumfiles'.$arParams["FORUM"]["ID"];
 ?>
-<script type="text/javascript">
+<script>
 BX.message({
 	no_topic_name : '<?=GetMessageJS("JERROR_NO_TOPIC_NAME")?>',
 	no_message : '<?=GetMessageJS("JERROR_NO_MESSAGE")?>',
@@ -198,7 +198,7 @@ if ($arResult["SHOW_PANEL_NEW_TOPIC"] == "Y" && $arParams["SHOW_TAGS"] == "Y")
 	?></div><?
 	$sQuestion = ob_get_clean();
 ?>
-<script type="text/javascript">
+<script>
 	var arVoteParams = {
 		'template_answer' : '<?=CUtil::JSEscape(str_replace("#A_VALUE#", "", $sAnswer))?>',
 		'template_question' : '<?=CUtil::JSEscape(str_replace(

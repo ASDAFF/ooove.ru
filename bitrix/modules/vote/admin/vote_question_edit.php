@@ -300,7 +300,7 @@ function ColorPicker(node)
 /************** Table of colors/************************************/
 ?>
 <form name="form1" method="POST" action="" enctype="multipart/form-data">
-<script type="text/javascript">
+<script>
 <!--
 function FIELD_TYPE_CHANGE(i)
 {
@@ -370,7 +370,7 @@ $tabControl->BeginNextTab();
 	<tr>
 		<td><?=GetMessage("VOTE_DIAGRAM_TYPE")?>:</td>
 		<td><?echo SelectBoxFromArray("DIAGRAM_TYPE", GetVoteDiagramList(), $arQuestion["DIAGRAM_TYPE"]);?>
-		<script type="text/javascript">OnDiagramFlagChange();</script>
+		<script>OnDiagramFlagChange();</script>
 		</td>
 	</tr>
 	<?if (COption::GetOptionString("vote", "VOTE_COMPATIBLE_OLD_TEMPLATE", "Y") == "Y"):?>
@@ -427,7 +427,7 @@ $tabControl->BeginNextTab();
 ?>
 	<tr class="adm-detail-required-field">
 		<td colspan="2">
-		<script type='text/javascript'>
+		<script>
 
 			function addQuestionRow(tthis)
 			{

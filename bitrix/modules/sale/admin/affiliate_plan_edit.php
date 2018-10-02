@@ -578,7 +578,7 @@ $tabControl->BeginNextTab();
 					$str2 .= ");\r\n";
 				}
 				?>
-				<script type="text/javascript">
+				<script>
 				<!--
 				itm_name['<?= $arIBlock["ID"] ?>'] = new Object();
 				itm_id['<?= $arIBlock["ID"] ?>'] = new Object();
@@ -589,7 +589,7 @@ $tabControl->BeginNextTab();
 				<?
 			}
 			?>
-			<script type="text/javascript">
+			<script>
 			<!--
 			itm_lev = <?= $maxLevel ?>;
 			var aff_cnt = 0;

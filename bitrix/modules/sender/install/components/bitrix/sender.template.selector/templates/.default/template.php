@@ -21,7 +21,7 @@ $this->addExternalJs($this->GetFolder() . '/grid.js');
 $containerId = 'bx-sender-template-selector';
 
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Template.Selector.init(<?=Json::encode(array(
 			'containerId' => $containerId,

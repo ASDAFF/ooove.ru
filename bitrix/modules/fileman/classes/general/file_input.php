@@ -416,7 +416,7 @@ class CFileInput
 				foreach(self::$curFiles as $ind => $arFile)
 					self::DisplayFile($arFile, $ind);
 		?>
-		<script type="text/javascript">
+		<script>
 		if (typeof(window.BX) !== 'undefined')
 		{
 			new BX.file_input(<?= CUtil::PhpToJSObject($arConfig)?>);
@@ -519,7 +519,7 @@ class CFileInput
 		if ($hint != '')
 		{
 		?>
-		<script type="text/javascript">
+		<script>
 		if (typeof(window.BX) !== 'undefined')
 		{
 			new BX.CHint({

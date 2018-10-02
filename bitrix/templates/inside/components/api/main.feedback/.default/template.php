@@ -29,7 +29,7 @@ if($arParams['TITLE_DISPLAY'] != 'N')
 
 $tpl_class_name = 'tpl_default';
 ?>
-<script type="text/javascript">
+<script>
 	jQuery(document).ready(function($){
 
 		<? if((count($arParams['REQUIRED_FIELDS']) && $arParams['VALIDTE_REQUIRED_FIELDS'])): ?>

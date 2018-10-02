@@ -600,7 +600,7 @@ class Landing extends \Bitrix\Landing\Internals\BaseTable
 			}
 			// output js
 			Asset::getInstance()->addString(
-				'<script type="text/javascript">' .
+				'<script>' .
 					'BX.ready(function(){'
 						. 'if (typeof BX.Landing.Main !== "undefined")'
 						. '{'

@@ -1853,7 +1853,7 @@ class CSaleYMHandler
 					'<input id="'.$tmpId.'" type="radio" name="'.$name.'_rb" value="'.$statusId.'">'.
 					'<span id="'.$tmpId.'_lbl">'.$statusName.'</span>'.
 				'</label><br>'.
-				'<script type="text/javascript">'.
+				'<script>'.
 					'BX("'.$tmpId.'").onchange=function(){if(this.checked == true) { BX("'.$id.'").innerHTML = BX("'.$tmpId.'_lbl").innerHTML; }};'.
 				'</script>';
 		}

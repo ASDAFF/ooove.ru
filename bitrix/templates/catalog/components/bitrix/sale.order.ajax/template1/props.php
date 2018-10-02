@@ -104,7 +104,7 @@ include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props_format.php");
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	function fGetBuyerProps(el)
 	{
 		var show = '<?=GetMessageJS('SOA_TEMPL_BUYER_SHOW')?>';

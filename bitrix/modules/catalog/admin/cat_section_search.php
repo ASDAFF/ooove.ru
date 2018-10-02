@@ -387,7 +387,7 @@ $oFilter = new CAdminFilter($sTableID."_filter", $arFindFields);
 
 $oFilter->Begin();
 ?>
-<script type="text/javascript">
+<script>
 function SelEl(id, name)
 {
 	<?if($m):?>

@@ -321,7 +321,7 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 			),
 			'LAST_ELEMENT' => $arItem['LAST_ELEMENT']
 		);
-		?><script type="text/javascript">
+		?><script>
 		var <? echo $strObName; ?> = new JCCatalogTopSection(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 		</script><?
 	}
@@ -493,7 +493,7 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 					'LAST_ELEMENT' => $arItem['LAST_ELEMENT']
 				);
 				?>
-<script type="text/javascript">
+<script>
 var <? echo $strObName; ?> = new JCCatalogTopSection(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script>
 				<?

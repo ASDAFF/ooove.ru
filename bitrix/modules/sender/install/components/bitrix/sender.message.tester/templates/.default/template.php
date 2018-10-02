@@ -52,7 +52,7 @@ $hint = $hint ?: Loc::getMessage('SENDER_MESSAGE_TESTER_TMPL_TEST_HINT');
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Message.Tester.init(<?=Json::encode(array(
 			'id' => $arParams['ID'],

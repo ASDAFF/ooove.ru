@@ -249,7 +249,7 @@ class CMpNotifications
 	public static function addJsToInformer()
 	{
 		return $script = '
-						<script type="text/javascript">
+						<script>
 						function hideMpNotification(el, module, array_id)
 						{
 							if(el.parentNode.parentNode.parentNode)

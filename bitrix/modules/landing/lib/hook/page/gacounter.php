@@ -63,7 +63,7 @@ class GaCounter extends \Bitrix\Landing\Hook\Page
 			\Bitrix\Main\Page\Asset::getInstance()->addString(
 '<!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=' . $counter . '" data-skip-moving="true"></script>
-<script type="text/javascript" data-skip-moving="true">
+<script data-skip-moving="true">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag(\'js\', new Date());

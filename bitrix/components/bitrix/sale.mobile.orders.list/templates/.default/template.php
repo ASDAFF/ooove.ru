@@ -127,7 +127,7 @@ if(isset($_REQUEST['filter_name']))
 }
 
 ?>
-<script type="text/javascript">
+<script>
 
 	app.setPageTitle({title: "<?=$pageTitle?>"});
 

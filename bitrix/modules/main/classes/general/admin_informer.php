@@ -116,7 +116,7 @@ class CAdminInformer
 	<span class="adm-informer-arrow"></span>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX.ready( function(){BX.adminInformer.Init('.$visibleCount.'); } );
 </script>';
 
@@ -242,7 +242,7 @@ class CAdminInformer
 						if($module["TMS"]+3600*24*14 < time())
 						{
 							$script = "
-							<script type=\"text/javascript\">
+							<script>
 							function hideMpAnswer(el, module)
 							{
 								if(el.parentNode.parentNode.parentNode)

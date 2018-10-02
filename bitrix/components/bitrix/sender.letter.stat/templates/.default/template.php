@@ -14,7 +14,7 @@ use Bitrix\Main\Web\Json;
 
 ?>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		var params = <?=Json::encode(array(
 			'mailingId' => $arParams['MAILING_ID'],
@@ -295,7 +295,7 @@ use Bitrix\Main\Web\Json;
 	);
 	?>
 
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 			BX.Sender.Letter.Stat.init();
 		});

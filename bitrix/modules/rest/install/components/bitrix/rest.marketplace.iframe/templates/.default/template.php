@@ -20,7 +20,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
+<script>
 	// Prevent loading page without header and footer
 	if(window === window.top)
 	{

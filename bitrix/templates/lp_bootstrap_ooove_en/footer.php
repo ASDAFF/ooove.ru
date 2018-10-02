@@ -420,7 +420,7 @@ target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/412
 
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
+<script>
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {

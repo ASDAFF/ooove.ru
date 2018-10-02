@@ -148,7 +148,7 @@ if(strlen($_POST['Update'].$_GET['RestoreDefaults'])>0 && check_bitrix_sessid() 
 	}
 	if($send):
 	?>
-		<script type="text/javascript">
+		<script>
 			if (BX.PULL)
 			{
 				BX.PULL.clearChannelId();

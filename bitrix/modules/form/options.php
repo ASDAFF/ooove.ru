@@ -229,7 +229,7 @@ endif;
 		</table>
 	</td>
 </tr>
-<script type="text/javascript">
+<script>
 function _showPass(el)
 {
 	el.parentNode.replaceChild(BX.create('INPUT', {

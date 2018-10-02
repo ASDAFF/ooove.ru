@@ -259,7 +259,7 @@ endforeach;
 if ($arParams["SHOW_CONTROLS"] == "Y" && $arParams["PERMISSION"] >= "W"):
 ?>
 	</form>
-<script type="text/javascript">
+<script>
 function Delete(form)
 {
 	if (!form || !__check_form(form, 'items[]'))
@@ -310,7 +310,7 @@ if (($arParams["SHOW_PAGE_NAVIGATION"] == "bottom" || $arParams["SHOW_PAGE_NAVIG
 endif;
 
 ?>
-<script type="text/javascript">
+<script>
 function ChangeText(obj)
 {
 	if (typeof obj != "object")

@@ -103,6 +103,6 @@ else
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	document.bform.USER_NAME.focus();
 </script>

@@ -51,7 +51,7 @@ if ($arParams["SHOW_RATING"] == 'Y')
 }
 
 $bShowedInfo = false;
-?><script type="text/javascript">
+?><script>
 function forumAddSessid(el)
 {
 	if (!!el || !!el.href) { el.href += (el.href.indexOf("?") > 0 ? "&" : "?") + 'sessid=' + BX.bitrix_sessid(); }

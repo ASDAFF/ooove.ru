@@ -217,7 +217,7 @@ $tabControl->EndTab();
 	<?=$orderBasket->getSettingsDialogContent();?>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX.ready( function(){
 		BX.Sale.Admin.OrderEditPage.setFixHashCorrection();
 

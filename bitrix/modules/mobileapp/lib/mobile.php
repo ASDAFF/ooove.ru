@@ -219,7 +219,7 @@ class Mobile
 		\CJSCore::Init();
 		\CJSCore::Init("db");
 		$jsVarsFormat = <<<JSCODE
-		<script type="text/javascript">
+		<script>
 			(window.BX||top.BX).message({ 'USER_ID': '%s'});
 			var appVersion = "%s";
 			var platform = "%s";
@@ -243,7 +243,7 @@ JSCODE;
 			 * We use console.log() to tell the application about successful loading of this page
 			 */
 			$androidJS = <<<JSCODE
-				<script type="text/javascript">
+				<script>
 				 	console.log("bxdata://success");
 				</script>
 JSCODE;
@@ -260,24 +260,24 @@ JSCODE;
 				 * it means that device can load cordova-scripts (including plugins) itself.
 				 */
 				$pgJsFile = "/bitrix/js/mobileapp/__deviceload__/cordova.js?mod=1";
-				$APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"" . $pgJsFile . "\"></script>", false, true);
+				$APPLICATION->AddHeadString("<script src=\"" . $pgJsFile . "\"></script>", false, true);
 
 			}
 			else
 			{
 				$pgJsFile = "/bitrix/js/mobileapp/" . self::$platform . "-cordova-" . self::$pgVersion . ".js";
-				$APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"" . \CUtil::GetAdditionalFileURL($pgJsFile) . "\"></script>", false, true);
+				$APPLICATION->AddHeadString("<script src=\"" . \CUtil::GetAdditionalFileURL($pgJsFile) . "\"></script>", false, true);
 			}
 		}
 
 
-		$APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"" . \CUtil::GetAdditionalFileURL("/bitrix/js/mobileapp/bitrix_mobile.js") . "\"></script>", false, true);
-		$APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"" . \CUtil::GetAdditionalFileURL("/bitrix/js/mobileapp/mobile_lib.js") . "\"></script>", false, true);
+		$APPLICATION->AddHeadString("<script src=\"" . \CUtil::GetAdditionalFileURL("/bitrix/js/mobileapp/bitrix_mobile.js") . "\"></script>", false, true);
+		$APPLICATION->AddHeadString("<script src=\"" . \CUtil::GetAdditionalFileURL("/bitrix/js/mobileapp/mobile_lib.js") . "\"></script>", false, true);
 
 
 		if (self::$platform == "android")
 		{
-			$APPLICATION->AddHeadString("<script type=\"text/javascript\">app.bindloadPageBlank();</script>", false, false);
+			$APPLICATION->AddHeadString("<script>app.bindloadPageBlank();</script>", false, false);
 		}
 
 		if (!array_key_exists("doNotUseViewPort", $_REQUEST))

@@ -120,7 +120,7 @@ if ($moduleAccessLevel >= 'R')
 	require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/admin/group_rights.php");
 
 	$tabControl->Buttons();?>
-<script type="text/javascript">
+<script>
 function RestoreDefaults()
 {
 	if (confirm('<? echo CUtil::JSEscape(Loc::getMessage("CUR_OPTIONS_BTN_HINT_RESTORE_DEFAULT_WARNING")); ?>'))

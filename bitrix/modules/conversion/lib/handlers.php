@@ -94,7 +94,7 @@ final class Handlers
 //		$asset = Asset::getInstance();
 //
 //		$asset->addString('
-//		<script type="text/javascript">
+//		<script>
 //			(window.BX||top.BX).message({"BITRIX_CONVERSION_VARNAME":"'.DayContext::getVarName().'"});
 //		</script>
 //		', true, AssetLocation::AFTER_CSS);

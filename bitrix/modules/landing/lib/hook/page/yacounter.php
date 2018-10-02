@@ -56,7 +56,7 @@ class YaCounter extends \Bitrix\Landing\Hook\Page
 		{
 			\Bitrix\Main\Page\Asset::getInstance()->addString(
 '<!-- Yandex.Metrika counter -->
-<script type="text/javascript" data-skip-moving="true">
+<script data-skip-moving="true">
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {

@@ -1,6 +1,6 @@
 ﻿<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <div class="section">
-	<script type="text/javascript">
+	<script>
 		function changePaySystem(param)
 		{
 			if (BX("account_only") && BX("account_only").value == 'Y') // PAY_CURRENT_ACCOUNT checkbox should act as radio
@@ -257,7 +257,7 @@
 	display: none; /* в обычном состоянии её нет) */
 }
 </style>
-<script type="text/javascript">
+<script>
 $(document).ready(function() { // вся магия после загрузки страницы
 	$('a#go').click( function(event){ // ловим клик по ссылки с id="go"
 		event.preventDefault(); // выключаем стандартную роль элемента

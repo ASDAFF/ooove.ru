@@ -1075,7 +1075,7 @@ if (!$bAllLinesLoaded)
 	<?echo GetMessage("IBLOCK_ADM_IMP_AUTO_REFRESH"); ?>
 	<a href="<?echo $APPLICATION->GetCurPage(); ?>?lang=<?echo LANGUAGE_ID; ?>&<?echo $strParams ?>"><?echo GetMessage("IBLOCK_ADM_IMP_AUTO_REFRESH_STEP"); ?></a><br>
 
-	<script type="text/javascript">
+	<script>
 	function DoNext()
 	{
 		window.location="<?echo $APPLICATION->GetCurPage(); ?>?lang=<?echo LANG ?>&<?echo $strParams ?>";
@@ -1165,7 +1165,7 @@ if ($STEP == 2)
 	<tr>
 		<td width="40%">&nbsp;</td>
 		<td width="60%">
-			<script type="text/javascript">
+			<script>
 			function DeactivateAllExtra()
 			{
 				document.getElementById("table_r").disabled = true;
@@ -1582,7 +1582,7 @@ if ($STEP < 4): ?>
 	<?if ($STEP == 2)
 	{
 ?>
-		<script type="text/javascript">
+		<script>
 			DeactivateAllExtra();
 			ChangeExtra();
 		</script>
@@ -1598,7 +1598,7 @@ if ($STEP < 4): ?>
 $tabControl->End();
 ?>
 </form>
-<script type="text/javascript">
+<script>
 <?if ($STEP < 2): ?>
 tabControl.SelectTab("edit1");
 tabControl.DisableTab("edit2");

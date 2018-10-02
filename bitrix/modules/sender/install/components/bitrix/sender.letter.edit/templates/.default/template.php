@@ -19,7 +19,7 @@ $containerId = 'bx-sender-letter-edit';
 Extension::load("ui.buttons");
 Extension::load("ui.buttons.icons");
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 
 		BX.Sender.Letter.init(<?=Json::encode(array(

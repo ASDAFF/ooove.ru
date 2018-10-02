@@ -16,7 +16,7 @@ $arBasketJSParams = array(
 	'ADD_URL' => $arUrls["add"]
 );
 ?>
-<script type="text/javascript">
+<script>
 	var basketJSParams = <?=CUtil::PhpToJSObject($arBasketJSParams);?>
 </script>
 <?

@@ -572,7 +572,7 @@ $tabControl->BeginNextTab();
 		{
 			$str_USE_MAIL = 'checked OnClick="template_warn()"';
 ?>
-<script type="text/javascript">
+<script>
 function template_warn()
 {
 	if (document.getElementById('mail_check').checked==false)
@@ -1222,7 +1222,7 @@ else:
 <?
 	else:
 ?>
-	<script type="text/javascript">BX.ready(BX.defer(function(){loadCrmFields('<?=$arFormCrmLink['CRM_ID']?>', function() {
+	<script>BX.ready(BX.defer(function(){loadCrmFields('<?=$arFormCrmLink['CRM_ID']?>', function() {
 <?
 	if ($bLinkCreated):
 		foreach ($arFormCrmFields as $ar):
@@ -1250,7 +1250,7 @@ else:
 .action-edit {background: scroll transparent url(/bitrix/images/form/options_buttons.gif) no-repeat 0 0; }
 .action-delete {background: scroll transparent url(/bitrix/images/form/options_buttons.gif) no-repeat -29px 0; }
 </style>
-<script type="text/javascript">
+<script>
 function _showPass(el)
 {
 	el.parentNode.replaceChild(BX.create('INPUT', {

@@ -135,7 +135,7 @@ else
 }
 ?>
 
-<script type="text/javascript">
+<script>
 	BX.Scale.graphCategoriesList = <?=CUtil::PhpToJSObject($graphCategories)?>;
 
 	function changeGraphCategories()

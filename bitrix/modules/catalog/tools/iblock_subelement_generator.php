@@ -102,7 +102,7 @@ CURRENCYCELL;
 function __showPopup($element_id, $items)
 {
 	echo
-		'<script type="text/javascript">
+		'<script>
 			top.BX.ready(function(){
 				top.BX.bind(top.BX("'.$element_id.'"), "click", function() {
 					top.BX.adminShowMenu(this, '.CAdminPopup::PhpToJavaScript($items).');
@@ -543,7 +543,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !$bReadOnly && check_bitrix_sessid()
 		if($idNewElement)
 		{
 			?>
-			<script type="text/javascript">
+			<script>
 				top.BX.closeWait();
 				if (!!top.BX.WindowManager.Get())
 				{
@@ -634,7 +634,7 @@ else
 	$tabControl->Begin();
 	$tabControl->BeginNextTab();
 	?>
-<script type="text/javascript">
+<script>
 	BX('edit_edit_table').className += ' adm-shop-page-table';
 
 	var CellTPL = [];
@@ -853,7 +853,7 @@ else
 			<div class="adm-detail-title-view-tab"><?= GetMessage("IB_SEG_SELECTED_PROPERTIES") ?></div>
 			<input type="hidden" value="0" id="generator_property_table_max_id">
 			<div class="adm-shop-table-block" id="generator_property_table">
-				<script type="text/javascript">
+				<script>
 					<?
 					foreach($arResult as $key => $arProperty)
 					{?>
@@ -878,7 +878,7 @@ else
 					<?$arFileProperties[]=array("ID" => "ANNOUNCE", "NAME" => GetMessage("IB_SEG_ANNOUNCE")); ?>
 					<span class="adm-btn" onclick="obPropertyTable.addPropertyImages();" id="ib_seg_add_images_button"><?= GetMessage("IB_SEG_ADD_PICTURES") ?></span>
 						<span class="adm-shop-bar-btn-wrap" id="ib_seg_property_span">
-							<script type="text/javascript">
+							<script>
 								addProperty(<?=CUtil::PhpToJSObject($arFileProperties)?>);
 							</script>
 						</span>

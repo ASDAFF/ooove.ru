@@ -159,7 +159,7 @@ class CCatalogMenu extends CAdminMenu
 						}
 					}
 					if($menuScripts != "")
-						echo '<script type="text/javascript">'.$menuScripts.'</script>';
+						echo '<script>'.$menuScripts.'</script>';
 				}
 
 				return true;

@@ -32,7 +32,7 @@ class CASDiblockAction {
 				fwrite($hdlOutput, '</asd_iblock_props>'."\n");
 				fclose($hdlOutput);
 			}
-			?><script type="text/javascript">
+			?><script>
 				top.BX.closeWait(); top.BX.WindowManager.Get().AllowClose(); top.BX.WindowManager.Get().Close();
 				window.location.href = '/bitrix/tools/asd.iblock/props_export.php?ID=<? echo $BID; ?>';
 			</script><?

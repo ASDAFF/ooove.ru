@@ -234,7 +234,7 @@ if ($STEP < 2)
 $tabControl->End();
 
 ?></form>
-<script type="text/javascript">
+<script>
 <?if ($STEP < 2):?>
 tabControl.SelectTab("edit1");
 tabControl.DisableTab("edit2");

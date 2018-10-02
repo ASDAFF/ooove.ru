@@ -4,51 +4,51 @@
 
 		<div class="order_component">
 			<div class="order_infoblock">
-				<div class="order_infoblock_title">Информация об остатках</div>
+				<div class="order_infoblock_title">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</div>
 				<div class="order_infoblock_content">
 					<table class="bx_table_item_remainder">
 						<thead>
 							<tr>
 								<td>
-									Категория
-									<span>Наименование [ID]</span>
+									пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+									<span>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [ID]</span>
 								</td>
-								<td>Общий остаток</td>
+								<td>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Стулья</td>
+								<td>пїЅпїЅпїЅпїЅпїЅпїЅ</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><span>Стулья Изопласт [21]</span></td>
+								<td><span>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [21]</span></td>
 								<td>5</td>
 							</tr>
 							<tr>
-								<td><span>Стулья Ксайракс [54]</span></td>
+								<td><span>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [54]</span></td>
 								<td>32</td>
 							</tr>
 							<tr>
-								<td><span>Стулья Министр [32]</span></td>
+								<td><span>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ [32]</span></td>
 								<td>2134</td>
 							</tr>
 							<tr>
-								<td><span>Стулья Плутон [34]</span></td>
+								<td><span>пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ [34]</span></td>
 								<td>234</td>
 							</tr>
 						</tbody>
 						<tbody>
 							<tr>
-								<td>Диваны</td>
+								<td>пїЅпїЅпїЅпїЅпїЅпїЅ</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><span>Диван Изопласт [15]</span></td>
+								<td><span>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [15]</span></td>
 								<td>5</td>
 							</tr>
 							<tr>
-								<td><span>Диван Ксайракс [53]</span></td>
+								<td><span>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ [53]</span></td>
 								<td>32</td>
 							</tr>
 						</tbody>
@@ -61,7 +61,7 @@
 
 	</div>
 
-<script type="text/javascript">
+<script>
 
 app.setPageTitle({title: "<?=(GetMessage('SMRB_PAGE_TITLE'))?>"});
 

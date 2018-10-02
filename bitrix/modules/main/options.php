@@ -232,7 +232,7 @@ $access = new CAccess();
 $arNames = $access->GetNames(array_merge($arCodes, $arHideCodes));
 
 $panel = "
-<script type=\"text/javascript\">
+<script>
 
 function InsertAccess(arRights, divId, hiddenName)
 {
@@ -657,7 +657,7 @@ foreach($arGROUPS as $group):
 </tr>
 <tr>
 	<td colspan="2">
-<script type="text/javascript">
+<script>
 function settingsSetGroupID(el)
 {
 	var tr = jsUtils.FindParentObject(el, "tr");
@@ -698,7 +698,7 @@ function settingsAddRights(a)
 
 <?$tabControl->Buttons();?>
 
-<script type="text/javascript">
+<script>
 function RestoreDefaults()
 {
 	if(confirm('<?echo AddSlashes(GetMessage("MAIN_HINT_RESTORE_DEFAULTS_WARNING"))?>'))
@@ -725,7 +725,7 @@ BX.ready(function(){
 <?$tabControl->End();?>
 </form>
 
-<script type="text/javascript">
+<script>
 function BxReqEmail(input)
 {
 	BX("new_user_registration_email_confirmation").disabled = !input.checked;

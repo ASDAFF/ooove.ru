@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 ?>
 
-<script type="text/javascript">
+<script>
 	function fShowStore(id, showImages, formWidth, siteId)
 	{
 		var strUrl = '<?=$templateFolder?>' + '/map.php';

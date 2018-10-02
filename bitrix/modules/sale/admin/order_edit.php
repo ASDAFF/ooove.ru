@@ -665,7 +665,7 @@ $tabControl->End();
 <div style="display: none;"><?=OrderEdit::getFastNavigationHtml($fastNavItems, $formId, 'tab_order');?></div>
 
 <?if(!$result->isSuccess() || $isNeedFieldsRestore):?>
-	<script type="text/javascript">
+	<script>
 		BX.ready( function(){
 			BX.Sale.Admin.OrderEditPage.restoreFormData(
 				<?=CUtil::PhpToJSObject(OrderEdit::restoreFieldsNames(
@@ -677,7 +677,7 @@ $tabControl->End();
 		});
 	</script>
 <?else:?>
-	<script type="text/javascript">
+	<script>
 		BX.ready( function(){
 			BX.Sale.Admin.OrderAjaxer.sendRequest(
 				BX.Sale.Admin.OrderEditPage.ajaxRequests.getOrderTails("<?=$order->getId()?>", "edit", "<?=$basketPrefix?>"),

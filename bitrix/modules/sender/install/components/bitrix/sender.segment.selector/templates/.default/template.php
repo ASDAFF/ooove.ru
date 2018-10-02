@@ -105,7 +105,7 @@ $containerId = 'sender-segment-selector';
 
 	</div>
 
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 			new BX.Sender.Segment.SelectorManager(<?=Json::encode(array(
 				'containerId' => $containerId,

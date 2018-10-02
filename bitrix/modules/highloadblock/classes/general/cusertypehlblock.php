@@ -379,7 +379,7 @@ class CUserTypeHlblock extends CUserTypeEnum
 
 		// js: changing field selector
 		$html .= '
-			<script type="text/javascript">
+			<script>
 				function hlChangeFieldOnHlblockChanged(hlSelect)
 				{
 					var list = '.CUtil::PhpToJSObject($list).';

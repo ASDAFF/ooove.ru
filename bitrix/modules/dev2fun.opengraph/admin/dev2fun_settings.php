@@ -216,7 +216,7 @@ $tabControl->BeginNextTab();
                                 <input type="button" value="<?=GetMessage("LABEL_ADD");?>" onclick="addNewRow('d2f_fields_og')">
                             </td>
                         </tr>
-                        <script type="text/javascript">
+                        <script>
                             BX.addCustomEvent('onAutoSaveRestore', function(ob, data) {
                                 for (var i in data){
                                     if (i.substring(0,9)=='FIELDS[og]['){
@@ -283,7 +283,7 @@ $tabControl->BeginNextTab();
                             <input type="button" value="<?=GetMessage("LABEL_ADD");?>" onclick="addNewRow('d2f_page_excluded_og')">
                         </td>
                     </tr>
-                    <script type="text/javascript">
+                    <script>
                         BX.addCustomEvent('onAutoSaveRestore', function(ob, data) {
                             for (var i in data){
                                 if (i.substring(0,9)=='EXCLUDE_PAGE['){
@@ -371,7 +371,7 @@ $tabControl->BeginNextTab();
                             <?= BeginNote();?>
                                 <?=Loc::getMessage('LABEL_SETTING_OG_SORTABLE_ATTENTION')?>
 							<?EndNote();?>
-                            <script type="text/javascript">
+                            <script>
                                 initSortable('sort_items');
                             </script>
                         </td>

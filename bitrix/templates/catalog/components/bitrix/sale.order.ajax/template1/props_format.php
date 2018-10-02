@@ -18,7 +18,7 @@ if (!function_exists("showFilePropertyField"))
 		else
 		{
 			$res = '
-			<script type="text/javascript">
+			<script>
 				function addControl(item)
 				{
 					var current_name = item.id.split("[")[0],

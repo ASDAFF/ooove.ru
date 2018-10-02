@@ -2074,7 +2074,7 @@ $tabControl->Buttons();
 <?$tabControl->End();?>
 </form>
 
-<script type="text/javascript">
+<script>
 <!--
 <?if ($tabStep == 1):?>
 	tabControl.SelectTab("tabSign");

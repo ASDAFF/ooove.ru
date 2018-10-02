@@ -439,7 +439,7 @@ if ($iNumber < $iCount || ($iCount == 0)):
 <?
 endif;
 
-?><script type="text/javascript">
+?><script>
 <?
 if ($arRes["USER"]["PERMISSION"] >= "Q" && ForumGetEntity($templateFolder) === false)
 {

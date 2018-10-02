@@ -42,7 +42,7 @@ $arBasketJSParams = array(
 	'BRAND_PROPERTY' => $arParams['BRAND_PROPERTY']
 );
 ?>
-<script type="text/javascript">
+<script>
 	var basketJSParams = <?=CUtil::PhpToJSObject($arBasketJSParams);?>;
 </script>
 <?

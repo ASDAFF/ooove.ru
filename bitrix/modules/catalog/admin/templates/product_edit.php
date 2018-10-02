@@ -146,7 +146,7 @@ if ($USER->CanDoOperation('catalog_read') || $USER->CanDoOperation('catalog_pric
 	echo GetMessage("IBLOCK_TCATALOG");
 	if ($bReadOnly) echo " ".GetMessage("IBLOCK_TREADONLY");
 	?>
-<script type="text/javascript">
+<script>
 var bReadOnly = <? echo ($bReadOnly ? 'true' : 'false'); ?>;
 
 function getElementForm()
@@ -465,7 +465,7 @@ function togglePriceType()
 	echo GetMessage("BASE_PRICE")?> (<? echo GetMessage('C2IT_PRICE_TYPE'); ?> "<? echo htmlspecialcharsbx(!empty($arBaseGroup['NAME_LANG']) ? $arBaseGroup['NAME_LANG'] : $arBaseGroup["NAME"]); ?>"):
 		</td>
 		<td width="60%">
-<script type="text/javascript">
+<script>
 var arExtra = [], arExtraPrc = [];
 	<?
 	$db_extras = CExtra::GetList(($by3="NAME"), ($order3="ASC"));
@@ -750,7 +750,7 @@ function OnChangePriceExist()
 		</td>
 	</tr>
 </table>
-<script type="text/javascript">
+<script>
 	SetFieldsStyle('catalog_vat_table');
 </script>
 	<?
@@ -838,7 +838,7 @@ function OnChangePriceExist()
 					<?
 					echo CCurrency::SelectBox("CAT_CURRENCY_".$arCatalogGroup["ID"], $str_CAT_CURRENCY, GetMessage("VAL_BASE"), true, "ChangeCurrency(".$arCatalogGroup["ID"].")", (($bReadOnly) ? "disabled readonly" : "").' id="'."CAT_CURRENCY_".$arCatalogGroup["ID"].'" ')
 					?>
-					<script type="text/javascript">
+					<script>
 						ChangeExtra(<?echo $arCatalogGroup["ID"] ?>);
 					</script>
 				</td>
@@ -854,7 +854,7 @@ function OnChangePriceExist()
 // extended price form
 	?>
 <div id="prices_ext" style="display: <?=$bUseExtendedPrice ? 'block' : 'none'?>;">
-<script type="text/javascript">
+<script>
 function addNewElementsGroup(parentId, modelId, counterId, keepValues, typefocus)
 {
 	if (bReadOnly)
@@ -1530,7 +1530,7 @@ function CloneBarcodeField()
 		<input type="button" value="<?echo GetMessage("C2IT_MORE")?>" OnClick="ClonePriceSections()">
 	</td>
 </tr>
-<script type="text/javascript">
+<script>
 	arCatalogGroups = [];
 	catalogGroupsInd = 0;
 </script>
@@ -1546,7 +1546,7 @@ function CloneBarcodeField()
 	while ($arCatalogGroup = $dbCatalogGroups->Fetch())
 	{
 		?>
-	<script type="text/javascript">
+	<script>
 		arCatalogGroups[catalogGroupsInd] = <?= $arCatalogGroup["ID"] ?>;
 		catalogGroupsInd++;
 	</script>
@@ -1632,7 +1632,7 @@ function CloneBarcodeField()
 						<td valign="top" align="center">
 
 							<?= CCurrency::SelectBox("CAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind, $str_CAT_CURRENCY, GetMessage("VAL_BASE"), true, "ChangeCurrencyEx(this)", (($bReadOnly) ? "disabled readonly" : "").' id="'."CAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind.'" ') ?>
-							<script type="text/javascript">
+							<script>
 								jsUtils.addEvent(window, 'load', function() {ChangeExtraEx(document.getElementById('CAT_EXTRA_<?= $arCatalogGroup["ID"] ?>_<?= $ind ?>'));});
 							</script>
 
@@ -1678,7 +1678,7 @@ function CloneBarcodeField()
 							<td valign="top" align="center">
 
 								<?= CCurrency::SelectBox("CAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind, $str_CAT_CURRENCY, GetMessage("VAL_BASE"), true, "ChangeCurrencyEx(this)", (($bReadOnly) ? "disabled readonly" : "").' id="'."CAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind.'" ') ?>
-								<script type="text/javascript">
+								<script>
 									jsUtils.addEvent(window, 'load', function () {ChangeExtraEx(document.getElementById('CAT_EXTRA_<?= $arCatalogGroup["ID"] ?>_<?= $ind ?>'));});
 								</script>
 
@@ -1977,7 +1977,7 @@ function CloneBarcodeField()
 	<tr>
 		<td width="40%"><?echo GetMessage("C2IT_PAY_TYPE")?></td>
 		<td width="60%">
-			<script type="text/javascript">
+			<script>
 			function ChangePriceType()
 			{
 				if (bReadOnly)
@@ -2083,7 +2083,7 @@ function CloneBarcodeField()
 	}
 	?>
 </table>
-<script type="text/javascript">
+<script>
 	SetFieldsStyle('catalog_properties_table');
 <?
 if ('Y' == $arMainCatalog['SUBSCRIPTION'])
@@ -2098,7 +2098,7 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION'])
 if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 	$tabControl1->BeginNextTab();
 	?>
-<script type="text/javascript">
+<script>
 	function CatGroupsActivate(obj, id)
 	{
 		if (bReadOnly)
@@ -2472,7 +2472,7 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 	{
 		$tabControl1->BeginNextTab();
 		?>
-		<script type="text/javascript">
+		<script>
 			function getDataSubscriptions() {
 				BX.ajax({
 					method: 'POST',
@@ -2535,7 +2535,7 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 
 	$tabControl1->End();
 	?>
-<script type="text/javascript">
+<script>
 BX.ready(function(){
 	var basePrice = BX('CAT_BASE_PRICE');
 	if (!!basePrice && !basePrice.disabled)

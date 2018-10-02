@@ -442,7 +442,7 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 			);
 		}
 		unset($emptyProductProperties);
-?><script type="text/javascript">
+?><script>
 var <? echo $strObName; ?> = new JCCatalogSection(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script><?
 	}
@@ -689,7 +689,7 @@ var <? echo $strObName; ?> = new JCCatalogSection(<? echo CUtil::PhpToJSObject($
 					);
 				}
 				?>
-<script type="text/javascript">
+<script>
 var <? echo $strObName; ?> = new JCCatalogSection(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script>
 				<?
@@ -759,7 +759,7 @@ var <? echo $strObName; ?> = new JCCatalogSection(<? echo CUtil::PhpToJSObject($
 				);
 			}
 ?>
-<script type="text/javascript">
+<script>
 var <? echo $strObName; ?> = new JCCatalogSection(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script>
 <?
@@ -769,7 +769,7 @@ var <? echo $strObName; ?> = new JCCatalogSection(<? echo CUtil::PhpToJSObject($
 }
 ?><div style="clear: both;"></div>
 </div>
-<script type="text/javascript">
+<script>
 BX.message({
 	BTN_MESSAGE_BASKET_REDIRECT: '<? echo GetMessageJS('CT_BCS_CATALOG_BTN_MESSAGE_BASKET_REDIRECT'); ?>',
 	BASKET_URL: '<? echo $arParams["BASKET_URL"]; ?>',

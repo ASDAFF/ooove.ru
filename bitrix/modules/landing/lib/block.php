@@ -1047,7 +1047,7 @@ class Block extends \Bitrix\Landing\Internals\BaseTable
 		{
 			$extContent = \CUtil::initJSCore($ext, true);
 			$extContent = preg_replace(
-				'#<script type="text/javascript"(\sdata\-skip\-moving\="true")?>.*?</script>#is',
+				'#<script(\sdata\-skip\-moving\="true")?>.*?</script>#is',
 				'',
 				$extContent
 			);
@@ -1735,7 +1735,7 @@ class Block extends \Bitrix\Landing\Internals\BaseTable
 							$jsPlaced[] = $js;
 							Manager::setPageClass(
 								'FooterJS',
-								'<script type="text/javascript" src="' . \htmlspecialcharsbx($js) . '"></script>'
+								'<script src="' . \htmlspecialcharsbx($js) . '"></script>'
 							);
 						}
 					}
@@ -1758,7 +1758,7 @@ class Block extends \Bitrix\Landing\Internals\BaseTable
 			$manifest = $this->getManifest();
 			if ($manifest)
 			{
-				echo '<script type="text/javascript">'
+				echo '<script>'
 						. 'BX.ready(function(){'
 							. 'if (typeof BX.Landing.Block !== "undefined")'
 							. '{'

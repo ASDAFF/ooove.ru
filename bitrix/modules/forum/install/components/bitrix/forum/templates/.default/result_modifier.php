@@ -300,7 +300,7 @@ if ($arParams["SHOW_FORUMS"] == "Y" && in_array($this->__page, array("forums", "
 	}
 	$arResult["GROUPS_FORUMS"] = __array_stretch($arGroups);
 endif;
-?><script type="text/javascript">
+?><script>
 //<![CDATA[
 	BX.message({
 		F_LOAD : '<?=GetMessageJS("F_LOAD")?>',

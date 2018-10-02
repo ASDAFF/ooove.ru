@@ -4,7 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 CModule::IncludeModule('pull');
 CJSCore::Init(array('pull'));
 $APPLICATION->AddHeadString('
-	<script type="text/javascript">
+	<script>
 		app.enableSliderMenu(true);
 	</script>
 ');?>

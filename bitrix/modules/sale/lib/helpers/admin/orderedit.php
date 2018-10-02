@@ -190,7 +190,7 @@ class OrderEdit
 			"SALE_ORDEREDIT_CONFIRM_CONTINUE", "SALE_ORDEREDIT_CONFIRM_ABORT");
 
 		$result = '
-			<script type="text/javascript">
+			<script>
 				BX.ready(function(){
 					BX.Sale.Admin.OrderEditPage.orderId = "'.$order->getId().'";
 					BX.Sale.Admin.OrderEditPage.siteId = "'.$order->getSiteId().'";
@@ -325,7 +325,7 @@ class OrderEdit
 		$isFixed = isset($orderEditOpts["fix_sale-order-edit-block-fast-nav"]) && $orderEditOpts["fix_sale-order-edit-block-fast-nav"] == "Y" ? true : false;
 
 		$result .= '
-			<script type="text/javascript">
+			<script>
 				BX.ready(function(){
 					BX.bind(window, "scroll", BX.Sale.Admin.OrderEditPage.fastNavigation.markItem);
 					setTimeout(function(){

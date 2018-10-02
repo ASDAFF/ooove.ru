@@ -257,7 +257,7 @@ if ($arParams["SHOW_FORM"] == "Y"):
 <?
 	if ($arParams["DetailListViewMode"] == "edit"):
 ?>
-<script type="text/javascript">
+<script>
 function Delete(form)
 {
 	if (!form || !__check_form(form, 'items[]')){
@@ -303,7 +303,7 @@ endif;
 
 
 ?>
-<script type="text/javascript">
+<script>
 function ChangeText(obj)
 {
 	if (typeof obj != "object")

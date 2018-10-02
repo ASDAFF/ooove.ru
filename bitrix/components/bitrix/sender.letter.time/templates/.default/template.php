@@ -27,7 +27,7 @@ Bitrix24\Service::initLicensePopup();
 $containerId = 'sender-letter-time';
 ?>
 <div id="<?=htmlspecialcharsbx($containerId)?>" class="sender-letter-time">
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 			BX.Sender.Letter.Time.init(<?=Json::encode(array(
 				'containerId' => $containerId,

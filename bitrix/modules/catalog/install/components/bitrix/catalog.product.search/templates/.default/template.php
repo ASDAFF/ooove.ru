@@ -364,7 +364,7 @@ else
 
 	$lAdmin->BeginEpilogContent();
 	?>
-	<script type="text/javascript">
+	<script>
 	BX.ready(function(){
 	<?
 	if (!empty($arSku))
@@ -562,7 +562,7 @@ else
 							<td><?= htmlspecialcharsbx($arProp["NAME"]) ?>:</td>
 							<td>
 								<?if (array_key_exists("GetAdminFilterHTML", $arProp["PROPERTY_USER_TYPE"])):
-									echo "<script type='text/javascript'>var arClearHiddenFields = [];</script>";
+									echo "<script>var arClearHiddenFields = [];</script>";
 									echo call_user_func_array($arProp["PROPERTY_USER_TYPE"]["GetAdminFilterHTML"], array(
 										$arProp,
 										array("VALUE" => 'filter_el_property_'.$arProp["ID"]),
@@ -605,7 +605,7 @@ else
 							<td><? echo htmlspecialcharsbx($arProp["NAME"]) ?> (<?=GetMessage("SPS_OFFER")?>):</td>
 							<td>
 								<?if (array_key_exists("GetAdminFilterHTML", $arProp["PROPERTY_USER_TYPE"])):
-									echo "<script type='text/javascript'>var arClearHiddenFields = [];</script>";
+									echo "<script>var arClearHiddenFields = [];</script>";
 									echo call_user_func_array($arProp["PROPERTY_USER_TYPE"]["GetAdminFilterHTML"], array(
 										$arProp,
 										array("VALUE" => "filter_sub_el_property_".$arProp["ID"]),
@@ -660,7 +660,7 @@ else
 	</div>
 	<? if (!$arResult['RELOAD']): ?>
 	</div>
-	<script type="text/javascript">
+	<script>
 		<?=$tableId?>_helper = new BX.Catalog.ProductSearchDialog({
 			tableId: '<?=$tableId?>',<?
 			if ($arResult['JS_CALLBACK'] != '' || $arResult['JS_EVENT'] != '')
@@ -686,7 +686,7 @@ else
 		BX('<?=$tableId?>_query').focus();
 	</script>
 <? endif ?>
-	<script type="text/javascript">
+	<script>
 		<?
 		if (sizeof($arResult['IBLOCKS']) > 1):
 			$iblockMenu = array(array(

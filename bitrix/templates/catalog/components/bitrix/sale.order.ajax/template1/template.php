@@ -7,7 +7,7 @@ if($USER->IsAuthorized() || $arParams["ALLOW_AUTO_REGISTER"] == "Y")
 		{
 			$APPLICATION->RestartBuffer();
 			?>
-			<script type="text/javascript">
+			<script>
 				window.top.location.href='<?=CUtil::JSEscape($arResult["REDIRECT_URL"])?>';
 			</script>
 			<?
@@ -87,7 +87,7 @@ if (!function_exists("cmpBySort"))
 		else
 		{
 			?>
-			<script type="text/javascript">
+			<script>
 			function submitForm(val)
 			{
 				if(val != 'Y')
@@ -146,7 +146,7 @@ if (!function_exists("cmpBySort"))
 				foreach($arResult["ERROR"] as $v)
 					echo ShowError($v);
 				?>
-				<script type="text/javascript">
+				<script>
 					top.BX.scrollToNode(top.BX('ORDER_FORM'));
 				</script>
 				<?
@@ -193,7 +193,7 @@ if (!function_exists("cmpBySort"))
 			else
 			{
 				?>
-				<script type="text/javascript">
+				<script>
 					top.BX('confirmorder').value = 'Y';
 					top.BX('profile_change').value = 'N';
 				</script>

@@ -58,7 +58,7 @@ if (is_array($arResult['ufInfo']))
 
 ?>
 
-<script type="text/javascript">
+<script>
 var GLOBAL_BX_REPORT_USING_CHARTS = true;
 
 var GLOBAL_REPORT_SELECT_COLUMN_COUNT = 0;
@@ -180,7 +180,7 @@ initReportControls();
 		<select name="reports_sort_type_select" id="reports-sort-type-select" class="reports-sort-type-select"><option value="ASC"><?=GetMessage('REPORT_SORT_TYPE_ASC')?></option><option value="DESC"><?=GetMessage('REPORT_SORT_TYPE_DESC')?></option></select>
 	</div>
 
-	<script type="text/javascript">
+	<script>
 
 	BX.ready(function() {
 
@@ -259,7 +259,7 @@ initReportControls();
 			</div>
 		</div>
 
-		<script type="text/javascript">
+		<script>
 
 			BX.ready(function() {
 				<? if (!empty($arResult["preSettings"]["limit"])): ?>
@@ -482,7 +482,7 @@ initReportControls();
 			<div class="webform-right-corner"></div>
 		</div>
 	</div>
-	<script type="text/javascript">
+	<script>
 	BX.ready(function () {
 		var i, colId, match;
 		var xColumnIndex = null, yColumnsIndexes = [];
@@ -915,7 +915,7 @@ initReportControls();
 		<a href="" class="report-select-popup-link" caller="true"><?=GetMessage('REPORT_CHOOSE')?></a>
 		<input type="hidden" name="value" />
 	</span>
-	<script type="text/javascript">
+	<script>
 		var RTFilter_chooseUser_LAST_CALLER;
 		function RTFilter_chooseUser(span)
 		{
@@ -952,7 +952,7 @@ initReportControls();
 		<a href="" class="report-select-popup-link" caller="true"><?=GetMessage('REPORT_CHOOSE')?></a>
 		<input type="hidden" name="value" />
 	</span>
-	<script type="text/javascript">
+	<script>
 		var RTFilter_chooseGroup_LAST_CALLER;
 		function RTFilter_chooseGroup(span)
 		{
@@ -1018,7 +1018,7 @@ initReportControls();
 
 <!-- user selector -->
 
-<script type="text/javascript">
+<script>
 
 function ShowSingleSelector(e) {
 
@@ -1075,7 +1075,7 @@ $name = $APPLICATION->IncludeComponent(
 ?>
 
 <!-- Connection js class -->
-<script type="text/javascript">
+<script>
 	BX(function () {
 
 		BX.Report['<?=$jsClass?>'] = new BX.Report.ReportConstructClass({

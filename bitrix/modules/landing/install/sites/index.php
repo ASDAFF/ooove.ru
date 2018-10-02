@@ -22,7 +22,7 @@
 );
 ?>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function ()
 	{
 		var pageTitle = BX('pagetitle');

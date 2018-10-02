@@ -990,7 +990,7 @@ $oFilter->Buttons(
 $oFilter->End();
 ?>
 </form>
-<script type="text/javascript">
+<script>
 function changeIdTo()
 {
 	var destination = BX('filter_id_to');

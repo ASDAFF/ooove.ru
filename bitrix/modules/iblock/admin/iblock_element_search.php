@@ -610,7 +610,7 @@ foreach($arProps as $prop)
 $oFilter = new CAdminFilter($sTableID."_filter", $arFindFields);
 
 ?>
-<script type="text/javascript">
+<script>
 var arClearHiddenFields = [],
 	blockedFilter = false;
 

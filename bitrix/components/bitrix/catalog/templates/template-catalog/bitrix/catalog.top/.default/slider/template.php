@@ -315,7 +315,7 @@ if ('Y' == $arParams['ADD_PROPERTIES_TO_BASKET'] && !$emptyProductProperties)
 				)
 			);
 ?>
-<script type="text/javascript">
+<script>
 	var <? echo $strObName; ?> = new JCCatalogTopSlider(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script>
 <?
@@ -491,7 +491,7 @@ if ('Y' == $arParams['ADD_PROPERTIES_TO_BASKET'] && !$emptyProductProperties)
 						'TREE_PROPS' => $arSkuProps
 					);
 ?>
-<script type="text/javascript">
+<script>
 	var <? echo $strObName; ?> = new JCCatalogTopSlider(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script>
 <?
@@ -535,7 +535,7 @@ if (1 < $intRowsCount)
 		);
 	}
 ?>
-<script type="text/javascript">
+<script>
 var ob<? echo $strContID; ?> = new JCCatalogTopSliderList(<? echo CUtil::PhpToJSObject($arJSParams, false, true); ?>);
 </script>
 <?

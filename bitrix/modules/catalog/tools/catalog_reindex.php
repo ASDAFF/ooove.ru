@@ -196,7 +196,7 @@ else
 		)
 	);
 	?>
-	<script type="text/javascript">
+	<script>
 		var jsCatalogReindex = new BX.Catalog.CatalogReindex(<? echo CUtil::PhpToJSObject($jsParams, false, true); ?>);
 	</script>
 	<?

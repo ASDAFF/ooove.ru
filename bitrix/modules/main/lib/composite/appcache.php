@@ -201,7 +201,7 @@ JS;
 			}
 			else
 			{
-				Asset::getInstance()->addString("<script type=\"text/javascript\">".self::DEBUG_HOLDER."</script>");
+				Asset::getInstance()->addString("<script>".self::DEBUG_HOLDER."</script>");
 			}
 
 			$params = Array(

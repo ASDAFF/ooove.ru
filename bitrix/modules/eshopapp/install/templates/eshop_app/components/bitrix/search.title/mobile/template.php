@@ -33,7 +33,7 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
 </div>
 </div>
 <?endif?>
-<script type="text/javascript">
+<script>
 	<?if (isset($_REQUEST["q"])):?>
 	BX("<?=$INPUT_ID?>").value = "<?=CUtil::JSEscape($_REQUEST["q"])?>";
 	<?endif?>

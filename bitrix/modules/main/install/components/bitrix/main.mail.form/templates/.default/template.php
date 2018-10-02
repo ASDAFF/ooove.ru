@@ -308,7 +308,7 @@ $renderField = function($htmlFormId, $field, $isExt = false)
 	<input type="submit" name="<?=sprintf('%s_submit', $htmlFormId) ?>" value="Y" style="display: none; ">
 </div>
 
-<script type="text/javascript">
+<script>
 
 BX.message({
 	BXEdBbCode: '<?=\CUtil::jsEscape(getMessage('MAIN_MAIL_FORM_EDITOR_HTML_MODE_BTN_HINT')) ?>'

@@ -10,7 +10,7 @@ use Bitrix\Main\Web\Json;
 
 $containerId = 'sender-start-container';
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Start.init(<?=Json::encode(array(
 			'containerId' => $containerId,

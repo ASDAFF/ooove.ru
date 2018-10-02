@@ -227,7 +227,7 @@ else
 		)
 	);
 	?>
-	<script type="text/javascript">
+	<script>
 		var jsProductSettings = new BX.Catalog.ProductSettings(<? echo CUtil::PhpToJSObject($jsParams, false, true); ?>);
 	</script>
 	<?

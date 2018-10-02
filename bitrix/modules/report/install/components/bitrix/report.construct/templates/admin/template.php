@@ -136,7 +136,7 @@ AAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent;
 	#bx-admin-prefix .popup-window-close-icon { background-color: inherit; right: 0; top: 0; }
 </style>
 
-<script type="text/javascript">
+<script>
 
 	initReportControls();
 	BX.message({'REPORT_DEFAULT_TITLE': '<?=CUtil::JSEscape(GetMessage('REPORT_DEFAULT_TITLE'))?>'});
@@ -263,7 +263,7 @@ AAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent;
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
+	<script>
 		function OnReportIntervalChange(select)
 		{
 			var filterSelectContainer = BX.findParent(select);
@@ -350,7 +350,7 @@ AAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent;
 		<select name="reports_sort_type_select" id="reports-sort-type-select" class="reports-sort-type-select"><option value="ASC"><?=GetMessage('REPORT_SORT_TYPE_ASC')?></option><option value="DESC"><?=GetMessage('REPORT_SORT_TYPE_DESC')?></option></select>
 	</div>
 
-	<script type="text/javascript">
+	<script>
 
 		BX.ready(function() {
 
@@ -430,7 +430,7 @@ AAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent;
 			</div>
 		</div>
 
-		<script type="text/javascript">
+		<script>
 
 			var GLOBAL_REPORT_FILTER_COUNT = 1;
 			var GLOBAL_REPORT_GROUPING_COLUMNS_COUNT = 0;
@@ -572,7 +572,7 @@ AAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent;
 	#report-chart-display-checkbox {vertical-align: middle;}
 	#report-chart-switch label {vertical-align: middle;}
 </style>
-<script type="text/javascript">
+<script>
 	var GLOBAL_BX_REPORT_USING_CHARTS = true;
 </script>
 <?php $fDisplayChart = $arResult['preSettings']['chart']['display']; ?>
@@ -659,7 +659,7 @@ AAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent;
 		<span class="report-chart-span-minus"></span>
 	</span>
 </div>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		var i, colId, match;
 		var xColumnIndex = null, yColumnsIndexes = [];

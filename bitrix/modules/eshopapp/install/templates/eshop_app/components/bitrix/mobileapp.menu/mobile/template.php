@@ -182,7 +182,7 @@ echo $htmlMenu;
 	</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	BX.addCustomEvent("onAuthSuccess", function(data) {
 		BX.remove(BX("auth"));
 		if (BX("user_name"))

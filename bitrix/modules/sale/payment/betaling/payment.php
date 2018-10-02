@@ -23,7 +23,7 @@ if (strlen($SERVER_NAME_tmp)<=0)
 $afvist = "http://".$SERVER_NAME_tmp;
 $godkendt = "http://".$SERVER_NAME_tmp;
 ?>
-<script type="text/javascript">
+<script>
 function open_window(url)
 {
 	sealWin = window.open(url,'Payment','toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,resizable=no,width=330,height=420,top=200,left=300');

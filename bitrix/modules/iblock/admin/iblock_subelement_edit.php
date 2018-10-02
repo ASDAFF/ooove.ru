@@ -1220,7 +1220,7 @@ else
 	{
 		CJSCore::Init(array('window','translit'));
 		?>
-		<script type="text/javascript">
+		<script>
 		var linked=<?if ($bLinked) echo 'true'; else echo 'false';?>;
 		function set_linked()
 		{
@@ -1439,7 +1439,7 @@ if (COption::GetOptionString("iblock", "show_xml_id", "N")=="Y")
 		$tabControl->BeginCustomField("SUB_XML_ID", GetMessage("IBLOCK_FIELD_XML_ID") . ":", $arIBlock["FIELDS"]["XML_ID"]["IS_REQUIRED"] === "Y");
 		?><tr id="tr_SUB_XML_ID">
 		<td><span id="hint_SUB_XML_ID"></span>
-			<script type="text/javascript">
+			<script>
 				BX.hint_replace(BX('hint_SUB_XML_ID'), '<?=CUtil::JSEscape(htmlspecialcharsbx(GetMessage('IB_SE_FIELD_HINT_XML_ID')))?>');
 			</script> <?=$tabControl->GetCustomLabelHTML(); ?></td>
 		<td>
@@ -1467,7 +1467,7 @@ if(!empty($PROP)):
 			?>
 			<tr id="tr_PROPERTY_<?echo $prop_fields["ID"];?>"<?if ($prop_fields["PROPERTY_TYPE"]=="F"):?> class="adm-detail-file-row"<?endif?>>
 				<td class="adm-detail-valign-top" width="40%"><?if($prop_fields["HINT"]!=""):
-					?><span id="hint_<?=$ID.'_'.$prop_fields["ID"];?>"></span><script type="text/javascript">BX.hint_replace(BX('hint_<?=$ID.'_'.$prop_fields["ID"];?>'), '<?echo CUtil::JSEscape(htmlspecialcharsbx($prop_fields["HINT"]))?>');</script>&nbsp;<?
+					?><span id="hint_<?=$ID.'_'.$prop_fields["ID"];?>"></span><script>BX.hint_replace(BX('hint_<?=$ID.'_'.$prop_fields["ID"];?>'), '<?echo CUtil::JSEscape(htmlspecialcharsbx($prop_fields["HINT"]))?>');</script>&nbsp;<?
 					endif;?><?echo $tabControl->GetCustomLabelHTML();?>:</td>
 				<td width="60%"><?_ShowPropertyField('PROP['.$prop_fields["ID"].']', $prop_fields, $prop_fields["VALUE"], (($historyId <= 0) && (!$bVarsFromForm) && ($ID<=0)), $bVarsFromForm, 50000, $tabControl->GetFormName());?></td>
 			</tr>

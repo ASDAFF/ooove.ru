@@ -16,7 +16,7 @@ use Bitrix\Main\Localization\Loc;
 
 $containerId = 'sender-im-message-editor';
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		BX.Sender.Im.Message.init(<?=Json::encode(array(
 			'containerId' => $containerId,

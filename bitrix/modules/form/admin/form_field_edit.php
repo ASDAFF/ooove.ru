@@ -403,7 +403,7 @@ function FormSubmit()
 endif;
 ?>
 <form name="form1" method="POST" action="" enctype="multipart/form-data"<?if ($additional!="Y"):?> onSubmit="return FormSubmit();"<?endif?>>
-<script type="text/javascript">
+<script>
 function FIELD_TYPE_CHANGE(i)
 {
 	v = document.getElementById("FIELD_TYPE_"+i)[document.getElementById("FIELD_TYPE_"+i).selectedIndex].value;

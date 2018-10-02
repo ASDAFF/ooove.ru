@@ -1643,7 +1643,7 @@ $tabControl->BeginNextTab();
 	</tr>
 
 	<?$tabControl->BeginNextTab();?>
-<script type="text/javascript">
+<script>
 var cur_site = {WEIGHT:'<?=CUtil::JSEscape($siteList[0]["ID"])?>',ADDRESS:'<?=CUtil::JSEscape($siteList[0]["ID"])?>'};
 function changeSiteList(value, add_id)
 {
@@ -1891,7 +1891,7 @@ for ($i = 0; $i < $siteCount; $i++):
 			<tr>
 				<td class="adm-detail-content-cell-l" valign="top">
 					<?=GetMessage("SMO_LOCATION_SALES_ZONE").":";?>
-					<script type="text/javascript">
+					<script>
 						BX.ready( function(){
 							BX.bind(BX("sales_zone_countries_<?=htmlspecialcharsbx($siteList[$i]["ID"])?>"), 'change', BX.Sale.Options.onCountrySelect);
 							BX.bind(BX("sales_zone_regions_<?=htmlspecialcharsbx($siteList[$i]["ID"])?>"), 'change', BX.Sale.Options.onRegionSelect);
@@ -2299,7 +2299,7 @@ endfor;
 			$valDeductOnDelivery = COption::GetOptionString("sale", "allow_deduction_on_delivery", "");
 			?>
 			<input type="checkbox" name="ALLOW_DEDUCTION_ON_DELIVERY" id="ALLOW_DEDUCTION_ON_DELIVERY" value="Y"<?if($valDeductOnDelivery=="Y")echo" checked";?> onclick="javascript:toggleDefaultStores(this);">
-			<script type="text/javascript">
+			<script>
 				function toggleDefaultStores(el)
 				{
 					var elements = document.getElementsByClassName('default_deduct_store_control');
@@ -2531,7 +2531,7 @@ endfor;
 		</td>
 	</tr>
 <?$tabControl->Buttons();?>
-<script type="text/javascript">
+<script>
 function RestoreDefaults()
 {
 	if (confirm('<?echo addslashes(GetMessage("MAIN_HINT_RESTORE_DEFAULTS_WARNING"))?>'))
@@ -2596,7 +2596,7 @@ function RestoreDefaults()
 	}
 	$systemTabControl->End();
 	?>
-<script type="text/javascript">
+<script>
 
 	function toggleTrackingAuto()
 	{

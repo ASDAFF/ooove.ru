@@ -188,7 +188,7 @@ $uriSave->addParams(array(
 									$pageFields['METAOG_TITLE']->setValue($meta['og:title']);
 								}
 								?>
-								<script type="text/javascript">
+								<script>
 									BX.ready(function()
 									{
 										new BX.Landing.EditTitleForm(BX('ui-editable-page-title'));
@@ -216,7 +216,7 @@ $uriSave->addParams(array(
 									$pageFields['METAOG_DESCRIPTION']->setValue($meta['og:description']);
 								}
 								?>
-								<script type="text/javascript">
+								<script>
 									BX.ready(function()
 									{
 										new BX.Landing.EditTitleForm(BX('ui-editable-page-text'));
@@ -353,7 +353,7 @@ $uriSave->addParams(array(
 										$pageFields['METAMAIN_DESCRIPTION']->setValue($meta['description']);
 									}
 									?>
-									<script type="text/javascript">
+									<script>
 										BX.ready(function()
 										{
 											BX.Landing.CustomFields([
@@ -480,7 +480,7 @@ $uriSave->addParams(array(
 									<?if (isset($pageFields['BACKGROUND_COLOR'])):
 										$value = \htmlspecialcharsbx(trim($pageFields['BACKGROUND_COLOR']->getValue()));
 										?>
-									<script type="text/javascript">
+									<script>
 										BX.ready(function() {
 											new BX.Landing.ColorPicker(BX('landing-form-colorpicker'));
 										});
@@ -638,7 +638,7 @@ $uriSave->addParams(array(
 						}
 						?>
 					</td>
-					<script type="text/javascript">
+					<script>
 						BX.ready(function()
 						{
 							new BX.Landing.Metrika();
@@ -762,7 +762,7 @@ $uriSave->addParams(array(
 	</div>
 </form>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function()
 	{
 		new BX.Landing.Layout({

@@ -149,7 +149,7 @@ if (!empty($arResult["ERROR_MESSAGE"]))
 		);
 		?>
 </form>
-<script type="text/javascript">
+<script>
 BX.ready(function(){
 	window["UC"]["f<?=$arParams["FORM_ID"]?>"] = new FCForm({
 		entitiesId : {'<?=$arParams["ENTITY_XML_ID"]?>' : ['<?=$arParams["ENTITY_TYPE"]?>', <?=$arParams["ENTITY_ID"]?>]},

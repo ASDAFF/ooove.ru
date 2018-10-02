@@ -8,7 +8,7 @@ $_SESSION["GD_RSS_PARAMS"][$rnd] = $arGadgetParams;
 ?>
 <div id="rss_container_<?=$rnd?>">
 </div>
-<script type="text/javascript">
+<script>
 
 	lastWaitRSS = [];
 

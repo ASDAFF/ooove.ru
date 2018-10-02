@@ -104,7 +104,7 @@ $APPLICATION->IncludeComponent(
 
 
 ?>
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 
 			BX.Sender.ContactList.init(<?=Json::encode(array(

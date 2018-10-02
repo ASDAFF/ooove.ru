@@ -22,7 +22,7 @@ CMobile::Init();
 	</body>
 </html>
 
-<script type="text/javascript">
+<script>
 	var pullParams = {
 			enable:true,
 			pulltext:"<?=GetMessage("PULL_TEXT")?>",

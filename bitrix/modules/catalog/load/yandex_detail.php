@@ -386,7 +386,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 				'SKU_EXPORT' => $arSKUExport,
 				'VAT_EXPORT' => $vatExport
 			);
-?><script type="text/javascript">
+?><script>
 top.BX.closeWait();
 top.BX.WindowManager.Get().Close();
 top.setDetailData('<?=CUtil::JSEscape(base64_encode(serialize($arXMLData)));?>');
@@ -549,7 +549,7 @@ HTML form
 		}
 
 		?>
-		<script type="text/javascript">
+		<script>
 		var currentSelectedType = '<? echo $type; ?>';
 
 		function switchType(type)
@@ -654,7 +654,7 @@ HTML form
 				<input type="hidden" name="PARAMS_COUNT" id="PARAMS_COUNT" value="<? echo $intCount; ?>">
 				<div style="width: 100%; text-align: center;"><input type="button" onclick="__addYP(); return false;" name="yandex_params_add" value="<? echo GetMessage('YANDEX_PROPS_ADDITIONAL_MORE'); ?>"></div>
 				</div>
-<script type="text/javascript">
+<script>
 function changeVatExport()
 {
 	var vatRates = BX('tr_BASE_VAT');
@@ -792,7 +792,7 @@ function __addYP()
 					?></div></td>
 				</tr>
 				</tbody></table><?
-				?><script type="text/javascript">
+				?><script>
 				var obExportConds = null,
 					obPropCondCont = null,
 					obSelectProps = null,

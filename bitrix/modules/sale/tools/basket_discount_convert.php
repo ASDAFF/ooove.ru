@@ -226,7 +226,7 @@ else
 		)
 	);
 	?>
-<script type="text/javascript">
+<script>
 	var jsBasketDiscountConverter = new BX.Sale.Admin.StepOperations.StepOperationsFilter(<? echo CUtil::PhpToJSObject($jsParams, false, true); ?>);
 	BX.ready(function(){
 		var filterType = BX('filter_type'),

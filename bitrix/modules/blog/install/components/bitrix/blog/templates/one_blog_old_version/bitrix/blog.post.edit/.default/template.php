@@ -505,9 +505,9 @@ else
 			if($arResult["allow_html"] == "Y")
 			{
 				?>
-				<script type="text/javascript" src="/bitrix/js/main/ajax.js"></script>
-				<script type="text/javascript" src="/bitrix/js/main/admin_tools.js"></script>
-				<script type="text/javascript" src="/bitrix/js/main/utils.js"></script>
+				<script src="/bitrix/js/main/ajax.js"></script>
+				<script src="/bitrix/js/main/admin_tools.js"></script>
+				<script src="/bitrix/js/main/utils.js"></script>
 				<?
 				//$APPLICATION->AddHeadScript("/bitrix/js/main/ajax.js");
 				//$APPLICATION->AddHeadScript("/bitrix/js/main/admin_tools.js");

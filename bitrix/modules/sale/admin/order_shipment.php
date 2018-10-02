@@ -576,7 +576,7 @@ $oFilter->Begin();
 <tr>
 	<td><?=GetMessage("SHIPMENT_ORDER_ID");?>:</td>
 	<td>
-		<script type="text/javascript">
+		<script>
 			function changeFilterOrderIdFrom()
 			{
 				if (document.find_form.filter_order_id_to.value.length<=0)
@@ -592,7 +592,7 @@ $oFilter->Begin();
 <tr>
 	<td><?=GetMessage("SHIPMENT_ID");?>:</td>
 	<td>
-		<script type="text/javascript">
+		<script>
 			function changeFilterOrderIdFrom()
 			{
 				if (document.find_form.filter_shipment_id_to.value.length<=0)

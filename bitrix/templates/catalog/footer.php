@@ -29,13 +29,13 @@
 </div>
 
 <!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
+<script>
 (function(){ var widget_id = '46422';
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
 <!-- {/literal} END JIVOSITE CODE -->
 
-<!— Yandex.Metrika counter —>
-<script type="text/javascript">
+<!ï¿½ Yandex.Metrika counter ï¿½>
+<script>
 (function (d, w, c) {
 (w[c] = w[c] || []).push(function() {
 try {
@@ -60,6 +60,6 @@ d.addEventListener("DOMContentLoaded", f, false);
 })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/26666175" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!— /Yandex.Metrika counter —>
+<!ï¿½ /Yandex.Metrika counter ï¿½>
 </body>
 </html>

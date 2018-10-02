@@ -144,7 +144,7 @@ if(\Bitrix\Scale\Helper::checkBxEnvVersion())
 		</div>
 	<?endif;?>
 
-	<script type="text/javascript">
+	<script>
 		BX.ready(function(){
 
 			<?foreach($jsLangMesIds as $langMesId):?>BX.message["<?=$langMesId?>"] ="<?=\CUtil::JSEscape(Loc::getMessage($langMesId))?>"; <?endforeach;?>

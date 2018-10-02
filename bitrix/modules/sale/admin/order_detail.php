@@ -1584,7 +1584,7 @@ else
 										}
 										?>
 										&nbsp;<span id="change_status_err" style="display: none;"></span>
-										<script type="text/javascript">
+										<script>
 											function fChangeStatus()
 											{
 												var obStatusErr = BX('change_status_err');
@@ -1722,7 +1722,7 @@ else
 									</tr>
 								</table>
 							</div>
-							<script type="text/javascript">
+							<script>
 								function fCancelCancelOrder()
 								{
 									BX.showWait();
@@ -2262,7 +2262,7 @@ else
 									</tr>
 								</table>
 							</div>
-							<script type="text/javascript">
+							<script>
 								function fChangeOrderStatus()
 								{
 									BX('change_status').value='Y';
@@ -2544,7 +2544,7 @@ else
 							?>
 							<input type="hidden" name="change_tracking_number" id="id_change_tracking_number_hidden" value="N">
 
-							<script type="text/javascript">
+							<script>
 								function fChangeTrackingNumber(el)
 								{
 									BX(el).style.display = 'none';
@@ -2669,7 +2669,7 @@ else
 						endforeach;
 					endif;
 					?>
-					<script type="text/javascript">
+					<script>
 						function fToggleDeliveryInfo()
 						{
 							var elements = document.getElementsByClassName('hidden-delivery-info');
@@ -2822,7 +2822,7 @@ else
 									</tr>
 								</table>
 							</div>
-							<script type="text/javascript">
+							<script>
 								function fPayChangeOrderStatus()
 								{
 									BX('change_status').value='Y';
@@ -3186,7 +3186,7 @@ else
 								</table>
 							</div>
 
-							<script type="text/javascript">
+							<script>
 								function fCancelMarkOrder()
 								{
 									BX.showWait();
@@ -3333,7 +3333,7 @@ else
 						?>
 						<input type="hidden" name="change_comments" id="id_change_comments_hidden" value="N">
 
-						<script type="text/javascript">
+						<script>
 							function fShowComment(el)
 							{
 								BX(el).style.display = 'none';
@@ -3430,7 +3430,7 @@ else
 									</tr>
 								</table>
 							</div>
-							<script type="text/javascript">
+							<script>
 								function fUndoDeductOrderResult(res)
 								{
 									BX.closeWait();
@@ -3857,7 +3857,7 @@ else
 						</table>
 					</td>
 				</tr>
-				<script type="text/javascript">
+				<script>
 					function fToggleSetItems(setParentId)
 					{
 						var elements = document.getElementsByClassName('set_item_' + setParentId);
@@ -4035,7 +4035,7 @@ else
 									?>
 									</div>
 								</div>
-								<script type="text/javascript">
+								<script>
 								function fTabsSelect(tabText, el)
 								{
 									BX('tab_1').className = "tabs";
@@ -4116,7 +4116,7 @@ else
 						</tr>
 						</table>
 
-						<script type="text/javascript">
+						<script>
 								/*
 								* click on recommendet More
 								*/
@@ -4329,7 +4329,7 @@ else
 	<input type="hidden" value="" name="popup-params-product" id="popup-params-product" >
 </div>
 
-	<script type="text/javascript">
+	<script>
 			var wind = new BX.PopupWindow('popup_sku', this, {
 				offsetTop : 10,
 				offsetLeft : 0,

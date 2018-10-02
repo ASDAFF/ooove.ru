@@ -195,7 +195,7 @@ if ($arParams["PERMISSION"] >= "U" && ($arResult["MODE"] == "public" || $arResul
 	<a href="#moderate" onclick="return act('drop');" class="photo-action delete"><?=GetMessage("P_DELETE")?></a>
 </div>
 
-<script type="text/javascript">
+<script>
 __photo_counter = 0;
 function to_show_pannel()
 {

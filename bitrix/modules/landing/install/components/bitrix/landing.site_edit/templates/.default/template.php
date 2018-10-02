@@ -211,7 +211,7 @@ $uriSave->addParams(array(
 												<?endif;?>
 											</div>
 											<?if (!$arResult['CUSTOM_DOMAIN']):?>
-											<script type="text/javascript">
+											<script>
 												BX.ready(function()
 												{
 													if (typeof BX.Landing.PaymentAlert !== 'undefined')
@@ -467,7 +467,7 @@ $uriSave->addParams(array(
 									<?if (isset($pageFields['BACKGROUND_COLOR'])):
 										$value = \htmlspecialcharsbx(trim($pageFields['BACKGROUND_COLOR']->getValue()));
 										?>
-									<script type="text/javascript">
+									<script>
 										BX.ready(function() {
 											new BX.Landing.ColorPicker(BX('landing-form-colorpicker'));
 										});
@@ -718,7 +718,7 @@ $uriSave->addParams(array(
 							<label for="checkbox-copyright" class="ui-checkbox-label"><?= Loc::getMessage('LANDING_TPL_ACTION_SHOW');?></label>
 						</span>
 						<?if (!Manager::checkFeature(Manager::FEATURE_ENABLE_ALL_HOOKS)):?>
-						<script type="text/javascript">
+						<script>
 							BX.ready(function()
 							{
 								BX.bind(BX('checkbox-copyright'), 'click', function(e)
@@ -758,7 +758,7 @@ $uriSave->addParams(array(
 
 </form>
 
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		new BX.Landing.EditTitleForm(BX('ui-editable-title'), 600, true);
 		new BX.Landing.ToggleFormFields(BX('landing-site-set-form'));

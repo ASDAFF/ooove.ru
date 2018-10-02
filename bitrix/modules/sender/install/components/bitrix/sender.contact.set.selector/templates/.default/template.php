@@ -53,7 +53,7 @@ $containerId = 'sender-contact-set-selector-' . strtolower($arParams['INPUT_NAME
 	));
 	?>
 
-	<script type="text/javascript">
+	<script>
 		BX.ready(function () {
 			BX.Sender.ContactSet.SelectorManager.create(<?=Json::encode(array(
 				'id' => $containerId,

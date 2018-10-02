@@ -45,7 +45,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 					<div class="bx-auth-secure-icon bx-auth-secure-unlock"></div>
 				</span>
 			</noscript>
-			<script type="text/javascript">
+			<script>
 				document.getElementById('bx_auth_secure').style.display = 'inline-block';
 			</script>
 		<?endif?>
@@ -69,7 +69,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 		<br><br><input type="submit" name="Login" class="bt_blue big shadow" value="<?=GetMessage("AUTH_AUTHORIZE")?>" />
 	</form>
 </div>
-<script type="text/javascript">
+<script>
 <?if (strlen($arResult["LAST_LOGIN"])>0):?>
 try{document.form_auth.USER_PASSWORD.focus();}catch(e){}
 <?else:?>

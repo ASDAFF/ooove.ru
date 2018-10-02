@@ -824,7 +824,7 @@ elseif($isDocumentConduct)
 	<?
 $tabControl->End();
 ?></form>
-<script type="text/javascript">
+<script>
 BX.Currency.setCurrencies(<? echo CUtil::PhpToJSObject($currencyList, false, true, true); ?>);
 if (typeof showTotalSum === 'undefined')
 {

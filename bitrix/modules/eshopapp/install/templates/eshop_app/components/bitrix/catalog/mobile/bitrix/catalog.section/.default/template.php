@@ -91,7 +91,7 @@ else
 <?
 $ajaxPath = CHTTP::urlAddParams(htmlspecialcharsback(POST_FORM_ACTION_URI), array("ajax_get_page" => "Y", "PAGEN_1" => "#page#"));
 ?>
-<script type="text/javascript">
+<script>
 	app.setPageTitle({"title" : "<?=CUtil::JSEscape(htmlspecialcharsback($arResult["NAME"]))?>"});
 
 	window.pagenNum = 1;

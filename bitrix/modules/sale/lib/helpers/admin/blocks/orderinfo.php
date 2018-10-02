@@ -21,7 +21,7 @@ class OrderInfo
 		\Bitrix\Main\Page\Asset::getInstance()->addJs("/bitrix/js/sale/admin/order_info.js");
 
 		return '
-			<script type="text/javascript">
+			<script>
 				BX.ready(function(){
 					BX.Sale.Admin.OrderEditPage.registerFieldsUpdaters( BX.Sale.Admin.OrderInfo.getFieldsUpdaters() );
 				});
@@ -300,7 +300,7 @@ class OrderInfo
 		if($isFixed)
 		{
 			$result .= '
-				<script type="text/javascript">
+				<script>
 					BX.ready(function(){
 						setTimeout(function(){BX.Sale.Admin.OrderEditPage.toggleFix("sale-order-edit-block-order-info-pin", "sale-order-edit-block-order-info");},1);
 					});
@@ -310,7 +310,7 @@ class OrderInfo
 		if(strlen($updatersContent) > 0)
 		{
 			$result .= '
-					<script type="text/javascript">
+					<script>
 						BX.ready(function(){
 							BX.Sale.Admin.OrderEditPage.registerFieldsUpdaters({
 							'.$updatersContent.'

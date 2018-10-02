@@ -778,7 +778,7 @@ $tabControl->BeginNextTab();
 					$tariffBlock .= CSaleHelper::getAdminMultilineControl($arMultiControlQuery);
 
 				echo $tariffBlock;
-				echo "<script type=\"text/javascript\">BX.Sale.PaySystem.initTariffLoad();</script>";
+				echo "<script>BX.Sale.PaySystem.initTariffLoad();</script>";
 			}
 		?>
 	</tbody>

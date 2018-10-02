@@ -239,7 +239,7 @@ function conversion_renderGraph(array $splitRates, array $splits, $height)
 
 	?>
 	<div id="bitrix-conversion-graph-<?=$index?>" style="height:<?=$height?>"></div>
-	<script type="text/javascript">
+	<script>
 
 		AmCharts.ready(function()
 		{

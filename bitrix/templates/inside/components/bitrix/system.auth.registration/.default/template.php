@@ -71,7 +71,7 @@
 	<a href="<?=$arResult["AUTH_AUTH_URL"]?>" rel="nofollow" class="btn gray"><?=GetMessage("AUTH_AUTH")?></a>
 </form>
 </noindex>
-<script type="text/javascript">
+<script>
 document.bform.USER_NAME.focus();
 </script>
 

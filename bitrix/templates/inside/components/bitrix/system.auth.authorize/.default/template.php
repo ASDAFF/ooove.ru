@@ -22,7 +22,7 @@ ShowMessage($arResult['ERROR_MESSAGE']);
 			<noscript>				<span class="bx-auth-secure" title="<?echo GetMessage("AUTH_NONSECURE_NOTE")?>">
 					<div class="bx-auth-secure-icon bx-auth-secure-unlock"></div>				</span>
 			</noscript>
-			<script type="text/javascript">
+			<script>
 				document.getElementById('bx_auth_secure').style.display = 'inline-block';
 			</script>
 		<?endif?>
@@ -34,7 +34,7 @@ ShowMessage($arResult['ERROR_MESSAGE']);
 			<a href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>" rel="nofollow" class="forgot-link"><?=GetMessage("AUTH_FORGOT_PASSWORD_2")?></a>
 		</noindex>	<?}?>
 </form>
-<script type="text/javascript">
+<script>
 	<?if (strlen($arResult["LAST_LOGIN"])>0){?>		try{document.form_auth.USER_PASSWORD.focus();}catch(e){}
 	<?}else{?>		try{document.form_auth.USER_LOGIN.focus();}catch(e){}	<?}?>
 </script>

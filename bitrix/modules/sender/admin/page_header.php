@@ -34,7 +34,7 @@ $senderAdminPaths = [
 ];
 
 ?>
-<script type="text/javascript">
+<script>
 	if (BX('adm-workarea'))
 	{
 		BX.removeClass(BX('adm-workarea'), 'adm-workarea');

@@ -71,7 +71,7 @@ if ($USER->CanDoOperation('catalog_read') || $USER->CanDoOperation('catalog_pric
 	echo GetMessage("IBLOCK_TCATALOG");
 	if ($bReadOnly) echo " ".GetMessage("IBLOCK_TREADONLY");
 	?>
-<script type="text/javascript">
+<script>
 var bReadOnly = <? echo ($bReadOnly ? 'true' : 'false'); ?>;
 
 function getElementSubForm()
@@ -400,7 +400,7 @@ if ($str_CAT_VAT_INCLUDED != 'Y' && $str_CAT_VAT_INCLUDED != 'N')
 			echo GetMessage("BASE_PRICE")?> (<? echo GetMessage('C2IT_PRICE_TYPE'); ?> "<? echo htmlspecialcharsbx(!empty($arBaseGroup['NAME_LANG']) ? $arBaseGroup['NAME_LANG'] : $arBaseGroup["NAME"]); ?>"):
 		</td>
 		<td width="60%">
-			<script type="text/javascript">
+			<script>
 				var arExtra = new Array();
 				var arExtraPrc = new Array();
 				<?
@@ -689,7 +689,7 @@ if ($str_CAT_VAT_INCLUDED != 'Y' && $str_CAT_VAT_INCLUDED != 'N')
 		</td>
 	</tr>
 </table>
-<script type="text/javascript">
+<script>
 SetSubFieldsStyle('subcatalog_vat_table');
 </script>
 <?
@@ -785,7 +785,7 @@ SetSubFieldsStyle('subcatalog_vat_table');
 					<?
 					echo CCurrency::SelectBox("SUBCAT_CURRENCY_".$arCatalogGroup["ID"], $str_CAT_CURRENCY, GetMessage("VAL_BASE"), true, "ChangeSubCurrency(".$arCatalogGroup["ID"].")", (($bReadOnly) ? "disabled readonly" : "").' id="'."SUBCAT_CURRENCY_".$arCatalogGroup["ID"].'" ')
 					?>
-					<script type="text/javascript">
+					<script>
 						ChangeSubExtra(<?echo $arCatalogGroup["ID"] ?>);
 					</script>
 				</td>
@@ -801,7 +801,7 @@ SetSubFieldsStyle('subcatalog_vat_table');
 // extended price form
 		?>
 <div id="subprices_ext" style="display: <?=$bUseExtendedPrice ? 'block' : 'none'?>;">
-<script type="text/javascript">
+<script>
 function addSubNewElementsGroup(parentId, modelId, counterId, keepValues, typefocus)
 {
 	if (bReadOnly)
@@ -1461,7 +1461,7 @@ function HideNotice()
 					<input type="button" value="<?echo GetMessage("C2IT_MORE")?>" OnClick="CloneSubPriceSections()">
 				</td>
 			</tr>
-			<script type="text/javascript">
+			<script>
 			arCatalogGroups = new Array();
 			catalogGroupsInd = 0;
 			</script>
@@ -1476,7 +1476,7 @@ function HideNotice()
 			while ($arCatalogGroup = $dbCatalogGroups->Fetch())
 			{
 				?>
-				<script type="text/javascript">
+				<script>
 				arCatalogGroups[catalogGroupsInd] = <?= $arCatalogGroup["ID"] ?>;
 				catalogGroupsInd++;
 				</script>
@@ -1563,7 +1563,7 @@ function HideNotice()
 									<td valign="top" align="center">
 
 											<?= CCurrency::SelectBox("SUBCAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind, $str_CAT_CURRENCY, GetMessage("VAL_BASE"), true, "ChangeSubCurrencyEx(this)", (($bReadOnly) ? "disabled readonly" : "").' id="'."SUBCAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind.'" ') ?>
-											<script type="text/javascript">
+											<script>
 												jsUtils.addEvent(window, 'load', function() {ChangeSubExtraEx(BX('SUBCAT_EXTRA_<?= $arCatalogGroup["ID"] ?>_<?= $ind ?>'));});
 											</script>
 
@@ -1609,7 +1609,7 @@ function HideNotice()
 										<td valign="top" align="center">
 
 												<?= CCurrency::SelectBox("SUBCAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind, $str_CAT_CURRENCY, GetMessage("VAL_BASE"), true, "ChangeSubCurrencyEx(this)", (($bReadOnly) ? "disabled readonly" : "").' id="'."SUBCAT_CURRENCY_".$arCatalogGroup["ID"]."_".$ind.'" ') ?>
-												<script type="text/javascript">
+												<script>
 													jsUtils.addEvent(window, 'load', function () {ChangeSubExtraEx(BX('SUBCAT_EXTRA_<?= $arCatalogGroup["ID"] ?>_<?= $ind ?>'));});
 												</script>
 
@@ -1898,7 +1898,7 @@ function HideNotice()
 						<?echo GetMessage("C2IT_PAY_TYPE")?>
 					</td>
 					<td>
-						<script type="text/javascript">
+						<script>
 						function ChangeSubPriceType()
 						{
 							if (bReadOnly)
@@ -2016,11 +2016,11 @@ function HideNotice()
 			}
 			?>
 		</table>
-<script type="text/javascript">
+<script>
 SetSubFieldsStyle('subcatalog_properties_table');
 </script>
 		<?if ($arCatalog["SUBSCRIPTION"]=="Y"):?>
-			<script type="text/javascript">
+			<script>
 			ChangeSubPriceType();
 			</script>
 		<?endif;?>
@@ -2031,7 +2031,7 @@ SetSubFieldsStyle('subcatalog_properties_table');
 			$subtabControl1->BeginNextTab();
 			?>
 
-			<script type="text/javascript">
+			<script>
 			function SubCatGroupsActivate(obj, id)
 			{
 				if (bReadOnly)
@@ -2376,7 +2376,7 @@ SetSubFieldsStyle('subcatalog_properties_table');
 		{
 			$subtabControl1->BeginNextTab();
 			?>
-			<script type="text/javascript">
+			<script>
 				function getDataSubscriptions() {
 					BX.ajax({
 						method: 'POST',

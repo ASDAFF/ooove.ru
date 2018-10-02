@@ -321,7 +321,7 @@ class LocationMulti extends Input\Base
 
 		$result = ob_get_contents();
 		$result = '
-			<script type="text/javascript">				
+			<script>
 				var bxInputdeliveryLocMultiStep3 = function()
 				{				
 					BX.loadScript("/bitrix/components/bitrix/sale.location.selector.system/templates/.default/script.js", function(){
@@ -401,8 +401,8 @@ class ProductCategories extends Input\Base
 			$values = array();
 
 		$result = '<br><a style="color:#113c7d;text-decoration:none;border-bottom:1px dashed #113c7d;font-weight: bold;" href="javascript:void(0);" id="'.$input["ID"].'" onclick="window.open(\''.$input["URL"].'\',\'choose category\',\'width=850,height=600\');">'.Loc::getMessage('SALE_DELIVERY_INP_ADD').'</a><br><br>'.
-			'<script type="text/javascript">'.$input["SCRIPT"].'</script>'.
-			'<script type="text/javascript">BX.message({SALE_DELIVERY_INP_DELETE: "'.Loc::getMessage("SALE_DELIVERY_INP_DELETE").'"});</script>';
+			'<script>'.$input["SCRIPT"].'</script>'.
+			'<script>BX.message({SALE_DELIVERY_INP_DELETE: "'.Loc::getMessage("SALE_DELIVERY_INP_DELETE").'"});</script>';
 
 		$catList = self::getCategoriesList($values);
 		$existCatHtml = '<table id="sale-admin-delivery-restriction-cat-content" width="100%">';

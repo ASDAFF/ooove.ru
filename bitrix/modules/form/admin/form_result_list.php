@@ -806,7 +806,7 @@ else
 
 if (is_array($arFormCrmLink)):
 ?>
-<script type="text/javascript">
+<script>
 function sendToCrm(FORM_ID, RESULT_ID)
 {
 	BX.ajax.loadJSON('/bitrix/admin/form_crm.php?action=add_lead&FORM_ID=<?=$WEB_FORM_ID?>&RESULT_ID=' + parseInt(RESULT_ID) + '&<?=bitrix_sessid_get()?>', function(result){

@@ -22,7 +22,7 @@ IncludeTemplateLangFile(__FILE__);
 <body id="body" class="<?=$APPLICATION->ShowProperty("BodyClass");?>">
 <?if (!CMobile::getInstance()->getDevice()) $APPLICATION->ShowPanel();?>
 
-<script type="text/javascript">
+<script>
 	app.pullDown({
 		enable:true,
 		callback:function(){document.location.reload();},
@@ -35,7 +35,7 @@ IncludeTemplateLangFile(__FILE__);
 if ($APPLICATION->GetCurPage(true) != SITE_DIR."eshop_app/personal/cart/index.php")
 {
 ?>
-	<script type="text/javascript">
+	<script>
 		app.addButtons({menuButton: {
 			type:    'basket',
 			style:   'custom',

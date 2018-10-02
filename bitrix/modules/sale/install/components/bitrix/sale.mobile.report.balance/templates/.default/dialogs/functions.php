@@ -31,7 +31,7 @@ function printStatusesListHtml($arStatuses, $currentStatusId, $showTitle = true)
 			</div>
 	</form>
 
-	<script type="text/javascript">
+	<script>
 
 		MAorderStatusControl = {
 

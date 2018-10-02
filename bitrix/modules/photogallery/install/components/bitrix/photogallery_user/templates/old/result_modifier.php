@@ -123,7 +123,7 @@ endif;
 
 $GLOBALS['APPLICATION']->AddHeadString('<script src="/bitrix/js/main/utils.js"></script>', true);
 ?>
-<script type="text/javascript">
+<script>
 if (typeof(phpVars) != "object")
 	var phpVars = {};
 if (!phpVars.cookiePrefix)

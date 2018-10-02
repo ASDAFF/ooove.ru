@@ -27,6 +27,6 @@ ShowMessage($arParams["~AUTH_RESULT"]);
 		<p><a href="<?=$arResult["AUTH_AUTH_URL"]?>"><b><?=GetMessage("AUTH_AUTH")?></b></a></p>
 	</form>
 </div>
-<script type="text/javascript">
+<script>
 document.bform.USER_LOGIN.focus();
 </script>

@@ -1,5 +1,5 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<script type="text/javascript">
+<script>
 	BX.addCustomEvent("onAuthSuccess", function(data) {
 		document.location.href = document.location.href;
 	});

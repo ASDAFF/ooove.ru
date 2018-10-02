@@ -1225,7 +1225,7 @@ $searchShowOfferName = Option::get('catalog', 'product_form_show_offer_name');
 
 $tabControl->Begin();
 ?>
-<script type="text/javascript">
+<script>
 function showReservation(show)
 {
 	var obRowReservationPeriod = BX('tr_reservation_period'),
@@ -1832,7 +1832,7 @@ $readOnly = false;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/catalog/tools/iblock_catalog_list.php'); */
 
 ?>
-<script type="text/javascript">
+<script>
 function ib_checkFldActivity(id, flag)
 {
 	var Cat = BX('IS_CATALOG_' + id + '_Y');
@@ -2027,7 +2027,7 @@ $tabControl->Buttons();
 <input type="reset" name="reset" value="<?echo Loc::getMessage("CAT_OPTIONS_BTN_RESET")?>">
 <input type="button" <?if ($bReadOnly) echo "disabled" ?> title="<?echo Loc::getMessage("CAT_OPTIONS_BTN_HINT_RESTORE_DEFAULT")?>" onclick="RestoreDefaults();" value="<?echo Loc::getMessage("CAT_OPTIONS_BTN_RESTORE_DEFAULT")?>">
 </form>
-<script type="text/javascript">
+<script>
 BX.hint_replace(BX('hint_reservation'), '<?=CUtil::JSEscape(Loc::getMessage('CAT_ENABLE_RESERVATION_HINT')); ?>');
 BX.hint_replace(BX('hint_show_catalog_tab_with_offers'), '<?=CUtil::JSEscape(Loc::getMessage('CAT_ENABLE_SHOW_CATALOG_TAB_WITH_OFFERS')); ?>');
 </script>
@@ -2072,7 +2072,7 @@ if ($strUseStoreControl === 'N' && $catalogCount > 0)
 		"TITLE" => Loc::getMessage("CAT_QUANTITY_CONTROL")
 	];
 ?>
-<script type="text/javascript">
+<script>
 	function catClearQuantity(el, action)
 	{
 		var waiter_parent = BX.findParent(el, BX.is_relative),
@@ -2392,7 +2392,7 @@ if (!$useSaleDiscountOnly || $catalogCount > 0)
 	}
 	$systemTabControl->End();
 ?>
-<script type="text/javascript">
+<script>
 function showDiscountReindex()
 {
 	var obDiscount, params;

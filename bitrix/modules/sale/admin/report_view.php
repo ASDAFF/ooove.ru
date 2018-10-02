@@ -253,7 +253,7 @@ if (!$fCriticalError)
 								<td class="adm-filter-item-right"></td>
 							</tr>
 							<!-- Loading lists of filters dependent on a site when the filter of a site is changed -->
-							<script type="text/javascript">
+							<script>
 								BX.ready(
 									function ()
 									{
@@ -426,7 +426,7 @@ if (!$fCriticalError)
 								</td>
 								<td class="adm-filter-item-right"></td>
 							</tr>
-							<script type="text/javascript">
+							<script>
 								// ORDER.USER, User controls
 								BX.ready(
 									function ()
@@ -545,7 +545,7 @@ if (!$fCriticalError)
 							</tr>
 
 
-							<script type="text/javascript">
+							<script>
 								// Group controls
 								BX.ready(
 									function ()

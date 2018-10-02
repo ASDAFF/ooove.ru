@@ -207,7 +207,7 @@ foreach($arResult['changeableFilters'] as $chFilter)
 											<option value="true"><?=GetMessage('REPORT_BOOLEAN_VALUE_TRUE')?></option>
 											<option value="false"><?=GetMessage('REPORT_BOOLEAN_VALUE_FALSE')?></option>
 										</select>
-										<script type="text/javascript">
+										<script>
 											function RTFilter_chooseBooleanCatch(value)
 											{
 												setSelectValue(RTFilter_chooseBoolean_LAST_CALLER, value);
@@ -332,7 +332,7 @@ foreach($arResult['changeableFilters'] as $chFilter)
 							</td>
 							<td class="adm-filter-item-right"></td>
 						</tr>
-						<script type="text/javascript">
+						<script>
 							function OnReportIntervalChange(select)
 							{
 								var filterSelectContainer = BX.findParent(select);
@@ -464,7 +464,7 @@ foreach($arResult['changeableFilters'] as $chFilter)
 	</tr>
 	</tbody>
 </table>
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		BX.bind(BX('report-reset-filter-button'), 'click', function(){
 			BX.submit(BX('report-reset-filter'));
@@ -497,7 +497,7 @@ foreach($arResult['changeableFilters'] as $chFilter)
 
 
 <!-- insert changeable filters -->
-<script type="text/javascript">
+<script>
 
 	function replaceInAttributesAndTextElements(el, info) {
 		var i, attr, bMultipleSelect;
@@ -1429,7 +1429,7 @@ unset($arGroupingResult['html']);
 
 
 </table>
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		var rows = BX.findChildren(BX('report-result-table'), {tag:'td', 'className':'adm-list-table-header'}, true);
 		for (i in rows)
@@ -1655,7 +1655,7 @@ unset($arGroupingResult['html']);
 <div id="report-chart-legend-row-example">
 	<div class="report-chart-legend-stick"></div><span class="report-chart-legend-label"></span>
 </div>
-<script type="text/javascript">
+<script>
 	BX.ready(function () {
 		var chartData = <?=CUtil::PhpToJSObject($chartData, true)?>;
 		if (!chartData || !chartData['columnsNames'] || !chartData['requestData']) return;

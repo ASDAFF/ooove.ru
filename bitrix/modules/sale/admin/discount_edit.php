@@ -766,7 +766,7 @@ $control->Buttons(
 );
 $control->Show();
 ?>
-<script type="text/javascript">
+<script>
 	BX.ready(function(){
 		var obCouponAdd = BX('COUPON_ADD_Y'),
 			obCouponType = BX('tr_COUPON_TYPE'),
